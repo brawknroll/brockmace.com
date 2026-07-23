@@ -1,92 +1,1767 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta
-   name="viewport"
-   content="width=device-width, initial-scale=1"
->
-<title>Brock Mace</title>
-<meta
-   name="description"
-   content="Practical notes and training materials about technical systems and individual performance."
->
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Human Day and Night | Brock Mace</title>
+  <meta name="description" content="A detailed educational note on human circadian timing, sleep, organ-system rhythms, and practical scheduling for permanent night-shift work.">
+  <meta name="author" content="Brock Mace">
+  <link rel="canonical" href="https://brockmace.com/human-day-and-night/">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="./article.css">
 </head>
 <body>
-<header>
-<a class="site-name" href="/">Brock Mace</a>
-<nav aria-label="Main navigation">
-<a href="/currently/">Currently</a>
-<a href="/notes/">Notes</a>
-<a href="/guides/">Guides</a>
-<a href="/about/">About</a>
-</nav>
-</header>
-<main>
-<section class="introduction">
-<p class="label">Infrastructure for life</p>
-<h1>Records of what I've forgotten</h1>
-<p>
-       I work in critical infrastructure in Silicon Valley. This website is
-       where I organize and publish useful things I learn about systems, infrastructure,
-       technology, fitness, and myself.
-</p>
-</section>
-<section id="currently">
-<h2>Currently studying</h2>
+  <header class="site-header">
+    <a class="site-name" href="/">Brock Mace</a>
+    <nav class="main-navigation" aria-label="Main navigation">
+      <a href="/currently/">Currently</a>
+      <a href="/notes/">Notes</a>
+      <a href="/guides/">Guides</a>
+      <a href="/about/">About</a>
+    </nav>
+  </header>
+
+  <main class="publication-page" id="top">
+    <header class="publication-header">
+      <p class="publication-kicker">Night-Shift Education</p>
+      <h1>The Human Day and Night</h1>
+      <p class="publication-deck">A detailed map of the body’s ordinary biological day, followed by a practical schedule for supporting health while working through the night.</p>
+      <div class="publication-meta" aria-label="Publication details">
+        <span>Long-form note</span>
+        <span>Published 2026</span>
+        <span>Approximately 55 Word pages</span>
+      </div>
+    </header>
+
+    <section class="article-introduction" aria-label="Introduction">
+      <p>The purpose of this article is to map a healthy body’s typical biological timing in a high level of detail so those patterns are easier to understand and more useful in real life.</p><p>By first defining how major systems coordinate around daylight, activity, meals, sleep, and darkness, this article creates a baseline for understanding what changes when someone works at night. That comparison matters because night-shift work often places wakefulness, light exposure, food intake, and activity outside the body’s usual circadian rhythm. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6859247/" rel="noopener noreferrer" target="_blank">Understanding that mismatch</a> can help identify practical ways to support healthier bodily processes, even when perfect circadian alignment is not possible.</p><p>To build that baseline, the article follows a generally healthy adult through a full 24-hour cycle and explains how biological time affects the brain, cardiovascular system, hormones, metabolism, liver, gut, kidneys, muscles, immune system, lungs, skin, and reproductive system. For a typical day-shift adult, the routine usually aligns with sunlight: awake and active during the day, asleep at night. For night-shift workers, that pattern is nearly reversed, so consistent signals such as sleep timing, meals, light exposure, and exercise become especially important. The exact times used here are examples only; real work schedules will vary.</p><p>For readability, this article uses an illustrative day-active adult who:</p><ul>
+<li>sleeps from approximately 11:00 p.m. to 7:00 a.m.</li>
+<li>receives daylight after waking</li>
+<li>eats during the daytime</li>
+<li>remains active during the day</li>
+<li>sleeps in relative darkness</li>
+</ul><p>The clock times are simply examples to illustrate the respective biological sequence.</p>
+    </section>
+
+    <details class="table-of-contents" open>
+      <summary>Contents</summary>
+      <ol class="toc-list">
+<li class="toc-part"><a href="#the-central-idea-2">The central idea</a></li>
+<li class="toc-part"><a href="#part-i-how-the-clock-hierarchy-works-2">Part I: How the clock hierarchy works</a></li>
+<li class="toc-section"><a href="#level-1-environmental-time-2">Level 1: Environmental time</a></li>
+<li class="toc-section"><a href="#level-2-retinal-light-detection-2">Level 2: Retinal light detection</a></li>
+<li class="toc-section"><a href="#level-3-the-suprachiasmatic-nucleus-2">Level 3: The suprachiasmatic nucleus</a></li>
+<li class="toc-section"><a href="#the-cellular-circadian-oscillator-2">The cellular circadian oscillator</a></li>
+<li class="toc-section"><a href="#level-4-system-wide-timing-signals-2">Level 4: System-wide timing signals</a></li>
+<li class="toc-section"><a href="#level-5-peripheral-and-local-clocks-2">Level 5: Peripheral and local clocks</a></li>
+<li class="toc-section"><a href="#a-critical-language-correction-2">A critical language correction</a></li>
+<li class="toc-part"><a href="#part-ii-the-verified-24-hour-cycle-2">Part II: The verified 24-hour cycle</a></li>
+<li class="toc-section"><a href="#phase-1-late-biological-night-2">Phase 1: Late biological night</a></li>
+<li class="toc-section"><a href="#phase-2-waking-transition-2">Phase 2: Waking transition</a></li>
+<li class="toc-section"><a href="#phase-3-biological-morning-2">Phase 3: Biological morning</a></li>
+<li class="toc-section"><a href="#phase-4-midday-and-early-afternoon-2">Phase 4: Midday and early afternoon</a></li>
+<li class="toc-section"><a href="#phase-5-late-biological-day-2">Phase 5: Late biological day</a></li>
+<li class="toc-section"><a href="#phase-6-evening-transition-2">Phase 6: Evening transition</a></li>
+<li class="toc-section"><a href="#phase-7-sleep-onset-and-early-sleep-2">Phase 7: Sleep onset and early sleep</a></li>
+<li class="toc-section"><a href="#phase-8-middle-and-late-sleep-2">Phase 8: Middle and late sleep</a></li>
+<li class="toc-part"><a href="#part-iii-the-organ-systems-across-the-full-day-2">Part III: The organ systems across the full day</a></li>
+<li class="toc-section"><a href="#brain-and-nervous-system-2">Brain and nervous system</a></li>
+<li class="toc-section"><a href="#cardiovascular-system-2">Cardiovascular system</a></li>
+<li class="toc-section"><a href="#endocrine-system-2">Endocrine system</a></li>
+<li class="toc-section"><a href="#liver-and-metabolic-control-2">Liver and metabolic control</a></li>
+<li class="toc-section"><a href="#pancreas-and-glucose-control-2">Pancreas and glucose control</a></li>
+<li class="toc-section"><a href="#gastrointestinal-system-2">Gastrointestinal system</a></li>
+<li class="toc-section"><a href="#kidneys-2">Kidneys</a></li>
+<li class="toc-section"><a href="#skeletal-muscle-2">Skeletal muscle</a></li>
+<li class="toc-section"><a href="#adipose-tissue-2">Adipose tissue</a></li>
+<li class="toc-section"><a href="#immune-system-2">Immune system</a></li>
+<li class="toc-section"><a href="#respiratory-system-2">Respiratory system</a></li>
+<li class="toc-section"><a href="#skin-2">Skin</a></li>
+<li class="toc-section"><a href="#bone-2">Bone</a></li>
+<li class="toc-part"><a href="#part-iv-what-night-work-changes-2">Part IV: What night work changes</a></li>
+<li class="toc-part"><a href="#part-v-what-remains-unknown-2">Part V: What remains unknown</a></li>
+<li class="toc-part"><a href="#the-verified-summary-2">The verified summary</a></li>
+<li class="toc-part"><a href="#4-00-p-m-wake">4:00 p.m. - Wake</a></li>
+<li class="toc-section"><a href="#for-the-brain-6">For the Brain!</a></li>
+<li class="toc-section"><a href="#for-the-endocrine-system-4">For the Endocrine System!</a></li>
+<li class="toc-section"><a href="#for-the-cardiovascular-system-4">For the Cardiovascular System!</a></li>
+<li class="toc-part"><a href="#4-15-4-45-p-m-bright-light">4:15–4:45 p.m. - Bright Light</a></li>
+<li class="toc-section"><a href="#for-the-brain-7">For the Brain!</a></li>
+<li class="toc-section"><a href="#for-the-endocrine-system-5">For the Endocrine System!</a></li>
+<li class="toc-part"><a href="#5-00-p-m-exercise">5:00 p.m. - Exercise</a></li>
+<li class="toc-section"><a href="#for-the-skeletal-muscle-2">For the Skeletal Muscle!</a></li>
+<li class="toc-section"><a href="#for-the-cardiovascular-system-5">For the Cardiovascular System!</a></li>
+<li class="toc-section"><a href="#for-the-metabolism-2">For the Metabolism!</a></li>
+<li class="toc-part"><a href="#6-00-p-m-first-meal">6:00 p.m. - First Meal</a></li>
+<li class="toc-section"><a href="#for-the-liver-2">For the Liver!</a></li>
+<li class="toc-section"><a href="#for-the-pancreas-2">For the Pancreas!</a></li>
+<li class="toc-section"><a href="#for-the-gastrointestinal-system-2">For the Gastrointestinal System!</a></li>
+<li class="toc-part"><a href="#8-30-p-m-begin-work">8:30 p.m. - Begin Work</a></li>
+<li class="toc-section"><a href="#for-the-brain-8">For the Brain!</a></li>
+<li class="toc-section"><a href="#for-the-cardiovascular-system-6">For the Cardiovascular System!</a></li>
+<li class="toc-part"><a href="#10-00-p-m-2-00-a-m-middle-of-shift">10:00 p.m.–2:00 a.m. - Middle of Shift</a></li>
+<li class="toc-section"><a href="#nutrition-2">Nutrition</a></li>
+<li class="toc-section"><a href="#hydration-2">Hydration</a></li>
+<li class="toc-section"><a href="#caffeine-2">Caffeine</a></li>
+<li class="toc-part"><a href="#2-00-3-00-a-m-slump">2:00–3:00 a.m. - Slump</a></li>
+<li class="toc-section"><a href="#for-the-brain-9">For the Brain!</a></li>
+<li class="toc-part"><a href="#4-00-6-00-a-m-home-stretch">4:00–6:00 a.m. - Home Stretch</a></li>
+<li class="toc-section"><a href="#nutrition-3">Nutrition</a></li>
+<li class="toc-part"><a href="#7-00-a-m-leave-work">7:00 a.m. - Leave Work</a></li>
+<li class="toc-section"><a href="#for-the-brain-10">For the Brain!</a></li>
+<li class="toc-section"><a href="#for-the-endocrine-system-6">For the Endocrine System!</a></li>
+<li class="toc-part"><a href="#7-30-a-m-routine">7:30 a.m. - Routine</a></li>
+<li class="toc-section"><a href="#environment-2">Environment</a></li>
+<li class="toc-part"><a href="#8-00-a-m-4-00-p-m-sleep">8:00 a.m.–4:00 p.m. - Sleep</a></li>
+<li class="toc-section"><a href="#environment-3">Environment</a></li>
+<li class="toc-section"><a href="#for-the-brain-11">For the Brain!</a></li>
+<li class="toc-section"><a href="#for-the-cardiovascular-system-7">For the Cardiovascular System!</a></li>
+<li class="toc-section"><a href="#for-the-immune-system-2">For the Immune System!</a></li>
+<li class="toc-section"><a href="#for-the-endocrine-system-7">For the Endocrine System!</a></li>
+<li class="toc-part"><a href="#what-cannot-be-fully-controlled-2">What Cannot Be Fully Controlled</a></li>
+</ol>
+    </details>
+
+    <article class="longform-article">
+      
+
+
+
+
+
+<section class="level1" id="the-central-idea">
+<h2 id="the-central-idea-2">The central idea</h2>
+<p>The human body does not simply turn “on” in the morning and “off” at night. It is always adjusting to its environment, modifying:</p>
 <ul>
-<li>The Behavior Ops Manual by Chase Hughes</li>
-<li>Behave by Robert Sapolsky</li>
-<li>NASM's OPT Model of Conditioning</li>
-<li>Microsoft Azure Cloud Infrastructure</li>
-<li>CBESST Certified Battery Energy Storage System Technician through Tonex</li>
-<li>EPA 608 Universal Refrigerant through ESCO</li>
+<li>which systems receive priority</li>
+<li>how sensitive organs are to incoming signals</li>
+<li>which genes are being transcribed</li>
+<li>which proteins are being produced, modified, moved, or degraded</li>
+<li>which fuels are being used</li>
+<li>how cells respond to food, activity, stress, injury, and infection</li>
+</ul>
+<p>The circadian system anticipates what environmental changes are coming. Instead of waiting for daylight, movement, food, fasting, sleep, or waking to happen, it prepares the body for those recurring events before they arrive. Sleep is related to that timing, but it is not the same thing. Circadian timing helps shape when sleep is most likely to occur and how it is organized, while prior wakefulness creates a separate buildup of sleep pressure. For that reason, sleep regulation is often described with <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9540767/" rel="noopener noreferrer" target="_blank">two interacting processes</a>:</p>
+<p><strong>Process C:</strong> the circadian timing signal</p>
+<p><strong>Process S:</strong> sleep pressure, which rises during wakefulness and falls during sleep</p>
+<p>These two systems often work together, but they do not always send the same message. Someone can be exhausted after being awake too long while the circadian system is still promoting alertness. A night-shift worker can also be trying to sleep during the day while the circadian system is pushing the body toward wakefulness.</p>
+</section>
+<section class="level1" id="part-i-how-the-clock-hierarchy-works">
+<h2 id="part-i-how-the-clock-hierarchy-works-2">Part I: How the clock hierarchy works</h2>
+<section class="level2" id="level-1-environmental-time">
+<h3 id="level-1-environmental-time-2">Level 1: Environmental time</h3>
+<p>Sensory receptors receive regular timing signals from:</p>
+<ul>
+<li>light and darkness</li>
+<li>meal timing</li>
+<li>physical activity</li>
+<li>temperature</li>
+<li>sleep and waking</li>
+<li>social schedules</li>
+</ul>
+<p>These signals are often called <a href="https://www.sleep.com/sleep-health/zeitgebers-how-they-work" rel="noopener noreferrer" target="_blank"><strong>zeitgebers</strong></a>, meaning “time givers.”</p>
+<p>Light is the dominant timing signal for the central circadian clock. Meals and activity can strongly influence clocks in metabolic and peripheral tissues.</p>
+<p>Environmental signals do not reset every clock equally. Bright light can substantially shift the central clock, while meal timing can shift the liver and other metabolic tissues without equally shifting the central clock. That makes internal disagreement among organ systems possible.</p>
+</section>
+<section class="level2" id="level-2-retinal-light-detection">
+<h3 id="level-2-retinal-light-detection-2">Level 2: Retinal light detection</h3>
+<p>Some retinal cells help produce vision. Other retinal cells also measure environmental illumination for biological timing.</p>
+<p>Intrinsically photosensitive retinal ganglion cells contain the photopigment <a href="https://www.jneurosci.org/content/31/45/16094" rel="noopener noreferrer" target="_blank"><strong>melanopsin</strong></a>, encoded by <a href="https://www.ncbi.nlm.nih.gov/gene/94233" rel="noopener noreferrer" target="_blank"><strong>OPN4</strong></a>. These cells respond directly to light and also receive input from rods and cones.</p>
+<p>Their axons send information through the retinohypothalamic tract to the suprachiasmatic nucleus, or SCN.</p>
+<p>At the SCN, retinal neurons release signaling molecules including glutamate. Light arriving at different circadian phases can alter intracellular signaling and change expression of clock-associated genes, particularly <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3193200/" rel="noopener noreferrer" target="_blank"><strong>PER1</strong></a> and <a href="https://www.jbc.org/article/S0021-9258%2819%2931146-9/fulltext" rel="noopener noreferrer" target="_blank"><strong>PER2</strong></a>.</p>
+<p>The direction of the phase shift depends on timing:</p>
+<ul>
+<li>light during the early biological night generally delays the clock</li>
+<li>light late in the biological night or early biological morning generally advances it</li>
+<li>light during much of the biological day usually has less phase-shifting effect</li>
+<li>Intensity, duration, spectrum, prior light history, and individual sensitivity also matter.</li>
 </ul>
 </section>
-<section id="notes">
-<h2>Recent notes</h2>
-<article class="item">
-<p class="date">July 2026</p>
-<h3>How a Data Center Works</h3>
-<p>
-         A practical overview of the electrical, cooling, monitoring, and
-         operational systems that support a critical facility.
-</p>
-<p class="status">In development</p>
-</article>
-<article class="item">
-<p class="date">July 2026</p>
-<h3>Training Around the Night Shift</h3>
-<p>
-         Notes on resistance training, recovery, nutrition, and sleep for
-         people who work overnight.
-</p>
-<p class="status">In development</p>
-</article>
+<section class="level2" id="level-3-the-suprachiasmatic-nucleus">
+<h3 id="level-3-the-suprachiasmatic-nucleus-2">Level 3: The suprachiasmatic nucleus</h3>
+<p>The <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3758475/" rel="noopener noreferrer" target="_blank">SCN</a> is a small paired region of the anterior hypothalamus positioned above the optic chiasm. It functions as the principal circadian pacemaker in mammals. It does not personally control every cellular reaction. Its role is closer to a master synchronizer.</p>
+<p>The SCN:</p>
+<ul>
+<li>receives direct retinal timing input</li>
+<li>generates an approximately 24-hour neural rhythm</li>
+<li>synchronizes its own population of neurons</li>
+<li>influences sleep/wake regulation</li>
+<li>controls daily patterns in autonomic output</li>
+<li>influences endocrine timing</li>
+<li>helps regulate body/temperature rhythms</li>
+<li>helps synchronize clocks elsewhere in the brain and body</li>
+</ul>
+<p>SCN neurons communicate using electrical activity and signaling molecules, including vasoactive intestinal peptide and arginine vasopressin. These signals help individual SCN cells maintain a coherent group rhythm.</p>
+<p>The SCN’s spontaneous firing rate is normally higher during the biological day and lower during the biological night, even when external light is held constant. This demonstrates that it is not merely reacting moment by moment to daylight.</p>
 </section>
-<section id="guides">
-<h2>Guides</h2>
-<article class="item">
-<h3>The Grounded Respectability Function</h3>
-<p>
-         The logic of earned respect explored through anecdotes of closeness, consistency, restraint, and voluntary cooperation based on best interests of all stakeholders in a decision.
-</p>
-<p class="status">In development</p>
-</article>
+<section class="level2" id="the-cellular-circadian-oscillator">
+<h3 id="the-cellular-circadian-oscillator-2">The cellular circadian oscillator</h3>
+<p>Most nucleated cells contain molecular machinery capable of producing circadian oscillations. The core mechanism is a delayed <a href="https://www.cell.com/trends/biochemical-sciences/fulltext/S0968-0004%2816%2930096-2" rel="noopener noreferrer" target="_blank">transcription–translation feedback</a> network.</p>
+<section class="level3" id="the-positive-limb">
+<h4>The positive limb</h4>
+<p>The proteins <strong>CLOCK</strong> and <strong>BMAL1</strong>, with BMAL1 encoded by <strong>ARNTL</strong>, form a transcription-factor complex. This <a href="https://pubmed.ncbi.nlm.nih.gov/42189225/" rel="noopener noreferrer" target="_blank">complex</a> binds regulatory DNA sequences, including E-box elements, and promotes expression of numerous tissue-specific clock-controlled genes:</p>
+<ul>
+<li><strong>PER1</strong></li>
+<li><strong>PER2</strong></li>
+<li><strong>PER3</strong></li>
+<li><strong>CRY1</strong></li>
+<li><strong>CRY2</strong></li>
+<li><strong>NR1D1</strong></li>
+<li><strong>NR1D2</strong></li>
+</ul>
 </section>
-<section id="about">
-<h2>About</h2>
-<p>
-       Be inspired. Love people. Pay attention. 
-</p>
-<p>
-<a href="mailto:brockmmace@outlook.com">Email Brock</a>
-</p>
+<section class="level3" id="the-negative-limb">
+<h4>The negative limb</h4>
+<p>PER and CRY proteins gradually accumulate in the cytoplasm. They form <a href="https://www.jbc.org/article/S0021-9258%2823%2900061-3/fulltext" rel="noopener noreferrer" target="_blank">complexes</a>, undergo chemical modification, enter the nucleus, and inhibit CLOCK–BMAL1-driven transcription. PER and CRY proteins are then progressively modified and degraded. Once their inhibitory effect falls sufficiently, CLOCK–BMAL1 activity rises again.</p>
+<p>The delay between transcription, protein accumulation, nuclear entry, inhibition, and degradation helps produce an approximately 24-hour oscillation.</p>
 </section>
-</main>
-<footer>
-<p>© 2026 Brock Mace · California</p>
-</footer>
+<section class="level3" id="the-stabilizing-loop">
+<h4>The stabilizing loop</h4>
+<p>CLOCK–BMAL1 also stimulates expression of:</p>
+<ul>
+<li><strong>NR1D1</strong>, encoding REV-ERBα</li>
+<li><strong>NR1D2</strong>, encoding REV-ERBβ</li>
+<li>members of the <strong>ROR</strong> nuclear-receptor family</li>
+</ul>
+<p><a href="https://www.cell.com/fulltext/S0092-8674%2802%2900825-5" rel="noopener noreferrer" target="_blank">REV-ERBs</a> generally repress <strong>ARNTL/BMAL1</strong> transcription, while ROR proteins generally promote it. This secondary loop helps stabilize phase and amplitude.</p>
+</section>
+<section class="level3" id="protein-level-timing-control">
+<h4>Protein-level timing control</h4>
+<p>The clock does not operate only through gene transcription. Proteins are also controlled through:</p>
+<ul>
+<li>Phosphorylation - process where a phosphate group is added to a protein, usually by an enzyme called a kinase. This small change can alter the protein’s activity, stability, or ability to interact with other proteins. It means the circadian clock is not controlled only by making new clock-gene RNA or proteins; it also depends on chemical “tuning” of existing proteins, including PER proteins, which affects how long they last and when they act.</li>
+<li>Ubiquitination - protein-tagging process where a small molecule called <strong>ubiquitin</strong> is attached to a protein. This tag can change what happens to the protein often marking it for breakdown but sometimes changing where it goes in the cell or how it interacts with other proteins. Proteins like <strong>PER</strong> and <strong>CRY</strong> can be chemically tagged so the cell knows when to modify, move, or degrade them, helping reset the timing cycle.</li>
+<li>Acetylation - a chemical modification where an <strong>acetyl group</strong> is added to a molecule, often a protein. In proteins, acetylation can change how that protein behaves. For example, how active it is, where it goes in the cell, how stable it is, or how strongly it interacts with DNA or other proteins. Proteins can be chemically “tuned” after they are made, helping control timing, stability, and gene-regulation activity.</li>
+<li>Intracellular transport - means the movement of molecules or proteins from one place to another <em>inside a cell</em>. Clock proteins may need to move between cell compartments especially from the <strong>cytoplasm</strong> into the <strong>nucleus</strong> before they can affect gene transcription and reset the timing cycle.</li>
+<li>Protein-complex formation - means two or more proteins physically bind together to act as a working unit. Proteins like <strong>PER</strong> and <strong>CRY</strong> do not always act alone. They can combine into larger complexes that help move into the nucleus, regulate gene transcription, and control the timing of the clock cycle.</li>
+<li>Degradation - means the cell breaks down a protein after it has served its purpose or needs to be removed. Proteins like <strong>PER</strong> and <strong>CRY</strong> are gradually dismantled so they stop blocking <strong>CLOCK–BMAL1</strong>. Once that inhibition fades, the cycle can restart and the molecular clock can keep oscillating.</li>
+</ul>
+<p>Important regulators include casein kinase proteins such as <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5435336/" rel="noopener noreferrer" target="_blank"><strong>CSNK1D</strong> and <strong>CSNK1E</strong></a>, which affect PER protein stability and timing. Variants in human clock genes can alter chronotype, sleep timing, and circadian period. This confirms that the molecular clock is functionally relevant in humans rather than merely a laboratory observation.</p>
+</section>
+</section>
+<section class="level2" id="level-4-system-wide-timing-signals">
+<h3 id="level-4-system-wide-timing-signals-2">Level 4: System-wide timing signals</h3>
+<p>The SCN coordinates the body through several overlapping output channels.</p>
+<section class="level3" id="autonomic-nervous-system">
+<h4>Autonomic nervous system</h4>
+<p>Circadian signals influence sympathetic and parasympathetic activity. These pathways reach organs including:</p>
+<ul>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8165005/" rel="noopener noreferrer" target="_blank"><span>heart</span></a></li>
+<li>blood vessels</li>
+<li>liver</li>
+<li>pancreas</li>
+<li>gastrointestinal tract</li>
+<li>adrenal glands</li>
+<li>kidneys</li>
+<li>adipose tissue</li>
+</ul>
+<p>The autonomic nervous system can rapidly change organ function without waiting for new protein synthesis.</p>
+</section>
+<section class="level3" id="endocrine-signaling">
+<h4>Endocrine signaling</h4>
+<p>Circadian timing organizes hormones including:</p>
+<ul>
+<li>melatonin</li>
+<li>cortisol</li>
+<li>growth hormone</li>
+<li>prolactin</li>
+<li>thyroid-stimulating hormone</li>
+<li>gonadotropins</li>
+<li>vasopressin-related water-balance signals</li>
+</ul>
+<p>Some hormone rhythms are <a href="https://www.autonomicneuroscience.com/article/S1566-0702%2818%2930239-X/fulltext" rel="noopener noreferrer" target="_blank">predominantly circadian</a>. Others depend heavily on sleep onset, sleep stage, meals, posture, stress, or activity.</p>
+</section>
+<section class="level3" id="body-temperature">
+<h4>Body temperature</h4>
+<p>Core body temperature follows a strong daily rhythm. It typically:</p>
+<ul>
+<li>rises through the biological morning</li>
+<li>remains relatively elevated during the biological day</li>
+<li>falls during the evening</li>
+<li>reaches its minimum late in the biological night</li>
+<li>rises again before or around habitual waking</li>
+</ul>
+<p>Temperature is both an output of central timing and a <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11263371/" rel="noopener noreferrer" target="_blank">potential synchronizing signal</a> for peripheral cells. The research does not conclude that deliberately warming or cooling the body changes circadian amplitude, only that stronger circadian organization and robust metabolism are characterized by a larger temperature amplitude (a bigger difference between daily peak and daily minimum temperature) and the amplitude differences were driven mainly by a <strong>deeper temperature minimum</strong>, not a higher temperature maximum.</p>
+<p>If we were to project an ideal body temperature cycle onto a typical night shift, it would look like this:</p>
+<table>
+<colgroup>
+<col style="width: 23%"/>
+<col style="width: 76%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Shift Phase</strong></th>
+<th><strong>Likely Temperature Strategy</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Start of night shift</td>
+<td>Warmer, active, bright-light environment</td>
+</tr>
+<tr class="even">
+<td>Middle of shift</td>
+<td>Maintain warmth and alertness</td>
+</tr>
+<tr class="odd">
+<td>End of shift (before sleep)</td>
+<td>Begin facilitating temperature decline</td>
+</tr>
+<tr class="even">
+<td>Main sleep period</td>
+<td>Cool, dark, quiet environment <strong>to allow a strong temperature minimum</strong> (biggest factor)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="level3" id="behavior">
+<h4>Behavior</h4>
+<p>The circadian system also organizes behavior:</p>
+<ul>
+<li>sleep and wake timing</li>
+<li>food-seeking and meal timing</li>
+<li>movement</li>
+<li>exposure to light</li>
+<li><a href="https://www.cambridge.org/core/journals/biological-reviews/article/abs/social-influences-on-mammalian-circadian-rhythms-animal-and-human-studies/6E35F17D90C4C00E7A2677C1AC59398F" rel="noopener noreferrer" target="_blank">social activity</a></li>
+</ul>
+<p>The social activity piece is a silent killer because on the one hand isolation or little social stimulation remove a typical cue for wakefulness, namely seeing and talking to people. On the other hand, social activities tend to occur during the typical sleeping period for night workers and regular disruptions to sleep patterns will rack up <a href="https://pubmed.ncbi.nlm.nih.gov/12683469/?dopt=Abstract" rel="noopener noreferrer" target="_blank">sleep debt</a>. It seems the best way to handle social obligations would be to schedule them as best as possible during the early biological day (late in the celestial evening) before the start of the shift rather than in the morning at the end of the biological day when anticipation and arousal are most likely to throw off the sleep period. Another important note is that night workers typically get far less social interaction overall than day-shift workers and therefore miss out on a key cue for wakefulness. I speculate that seeking out social interaction during the shift may help night shift operators to stave off sleep pressure during the night shift, while light remains the primary signal for the circadian system.</p>
+</section>
+</section>
+<section class="level2" id="level-5-peripheral-and-local-clocks">
+<h3 id="level-5-peripheral-and-local-clocks-2">Level 5: Peripheral and local clocks</h3>
+<p>Clock-gene oscillations have been found in <a href="https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2025.1606242/full" rel="noopener noreferrer" target="_blank">many human tissues</a> and cell types, including:</p>
+<ul>
+<li>liver</li>
+<li>skeletal muscle</li>
+<li>adipose tissue</li>
+<li>pancreas</li>
+<li>gastrointestinal tissue</li>
+<li>skin</li>
+<li>blood and immune cells</li>
+<li>heart and vascular tissue</li>
+<li>kidney</li>
+<li>lung</li>
+<li>reproductive tissues</li>
+</ul>
+<p>Peripheral clocks are not passive duplicates of the SCN. Each tissue combines:</p>
+<ul>
+<li>its molecular clock</li>
+<li>autonomic signals</li>
+<li>hormones</li>
+<li>temperature</li>
+<li>nutrients</li>
+<li>local mechanical or metabolic conditions</li>
+<li>tissue-specific transcription factors</li>
+</ul>
+<p>As a result, the same core clock can produce different outputs in different organs.<br/>
+CLOCK–BMAL1 activity in a liver cell can help organize metabolic pathways. In a vascular cell, it can influence vascular and inflammatory programs. In an immune cell, it can influence trafficking and immune responsiveness.</p>
+</section>
+<section class="level2" id="a-critical-language-correction">
+<h3 id="a-critical-language-correction-2">A critical language correction</h3>
+<p>Genes are rarely completely switched “on” or “off.” A more accurate description is that gene expression:</p>
+<ul>
+<li>rises</li>
+<li>falls</li>
+<li>peaks</li>
+<li>reaches a trough</li>
+<li>changes amplitude</li>
+<li>shifts phase</li>
+<li>becomes more or less responsive to another signal</li>
+</ul>
+<p>Furthermore, <a href="https://www.cell.com/cell/fulltext/S0092-8674%2816%2930270-7?isAjax=true&amp;code=cell-site" rel="noopener noreferrer" target="_blank">messenger RNA</a> is not the same thing as functional output. A gene’s messenger RNA may peak before:</p>
+<ul>
+<li>its protein abundance peaks</li>
+<li>the protein reaches the correct cell compartment</li>
+<li>the protein is activated</li>
+<li>the pathway produces a measurable physiological effect</li>
+</ul>
+<p>Human studies have found rhythmic expression in many blood transcripts, but blood cannot be assumed to represent the liver, heart, pancreas, brain, or kidney. Sleep restriction and mistimed sleep can also reduce or reorganize rhythmic gene expression in <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3607048/" rel="noopener noreferrer" target="_blank">human blood</a>.</p>
+</section>
+</section>
+<section class="level1" id="part-ii-the-verified-24-hour-cycle">
+<h2 id="part-ii-the-verified-24-hour-cycle-2">Part II: The verified 24-hour cycle</h2>
+<section class="level2" id="phase-1-late-biological-night">
+<h3 id="phase-1-late-biological-night-2">Phase 1: Late biological night</h3>
+<p><strong>Illustrative clock time: 4:00–7:00 a.m. -</strong> The person is still asleep, but the body is already preparing for waking.</p>
+<section class="level3" id="brain-and-sleep-architecture">
+<h4>Brain and sleep architecture</h4>
+<p>Human sleep occurs in recurring cycles of <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0228903" rel="noopener noreferrer" target="_blank">non-REM and REM sleep</a>. Early in the sleep period, cycles contain more deep N3 sleep. Later in the sleep period:</p>
+<ul>
+<li>N3 becomes less common</li>
+<li>REM episodes generally become longer</li>
+<li>awakenings become more likely</li>
+<li>circadian wake drive begins increasing</li>
+</ul>
+<p>The late sleep period is therefore not merely a weaker form of early sleep. Its neurological composition is different.</p>
+</section>
+<section class="level3" id="rem-state">
+<h4>REM state</h4>
+<p>During REM sleep:</p>
+<ul>
+<li>cortical EEG activity becomes relatively activated</li>
+<li>vivid dreams are common</li>
+<li>skeletal-muscle tone is strongly inhibited</li>
+<li>breathing becomes more irregular</li>
+<li>heart rate and autonomic activity become more variable</li>
+<li>thermoregulatory control is reduced</li>
+</ul>
+<p>The <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4912466/" rel="noopener noreferrer" target="_blank">skeletal-muscle inhibition</a> of REM helps prevent most dream-related motor commands from becoming full physical movements. REM sleep is associated with learning and emotional processing, but current evidence does not justify assigning one exclusive psychological function to REM.</p>
+</section>
+<section class="level3" id="cortisol">
+<h4>Cortisol</h4>
+<p>Cortisol begins increasing before habitual waking. Its rhythm is controlled by the hypothalamic–pituitary–adrenal axis:</p>
+<ul>
+<li>hypothalamic signaling influences corticotropin-releasing hormone</li>
+<li>the pituitary releases adrenocorticotropic hormone</li>
+<li>the adrenal cortex releases cortisol</li>
+</ul>
+<p>The circadian system helps time this axis, but stress, illness, exercise, glucose status, and sleep can modify it. The rising cortisol concentration helps prepare for activity by influencing:</p>
+<ul>
+<li>glucose availability</li>
+<li>vascular responsiveness</li>
+<li>immune signaling</li>
+<li>brain arousal</li>
+<li>fuel mobilization</li>
+</ul>
+<p><a href="https://academic.oup.com/edrv/article/46/1/43/7739741" rel="noopener noreferrer" target="_blank">Cortisol</a> should not be described simply as harmful or as a “stress hormone.” A normal daily cortisol rhythm is an essential timing and metabolic signal.</p>
+</section>
+<section class="level3" id="melatonin">
+<h4>Melatonin</h4>
+<p>Melatonin is still elevated during much of the late biological night but begins declining toward morning. Melatonin production follows this pathway:</p>
+<ul>
+<li>darkness is detected through retinal and circadian pathways</li>
+<li>the SCN communicates through a multisynaptic autonomic route</li>
+<li>sympathetic fibers ultimately reach the pineal gland</li>
+<li>norepinephrine stimulates melatonin synthesis</li>
+<li>melatonin enters blood and cerebrospinal fluid</li>
+</ul>
+<p>Important genes and enzymes involved in pineal melatonin synthesis include:</p>
+<ul>
+<li><strong>TPH1</strong>, involved in serotonin synthesis</li>
+<li><strong>AANAT</strong>, which catalyzes a major timing-sensitive step</li>
+<li><strong>ASMT</strong>, which contributes to final melatonin formation</li>
+</ul>
+<p>Light at night suppresses melatonin, particularly when appropriately timed and sufficiently intense. Melatonin acts through receptors including:</p>
+<ul>
+<li><strong>MTNR1A</strong>, encoding MT1</li>
+<li><strong>MTNR1B</strong>, encoding MT2</li>
+</ul>
+<p><a href="https://www.mdpi.com/2079-7737/12/1/89" rel="noopener noreferrer" target="_blank">Melatonin</a> is a signal of biological darkness. It can facilitate sleep, but it is not the only cause of sleep.</p>
+</section>
+<section class="level3" id="core-body-temperature">
+<h4>Core body temperature</h4>
+<p>Core temperature is near its circadian minimum during the latter biological night. The exact minimum differs among individuals and does not always coincide with the coldest environmental hour. As biological morning approaches:</p>
+<ul>
+<li>core temperature begins rising</li>
+<li>metabolic and neural systems transition toward daytime activity</li>
+<li>wake propensity strengthens</li>
+</ul>
+</section>
+<section class="level3" id="cardiovascular-system">
+<h4>Cardiovascular system</h4>
+<p>During stable non-REM sleep, compared with quiet wakefulness:</p>
+<ul>
+<li>heart rate is generally lower</li>
+<li>blood pressure is generally lower</li>
+<li>sympathetic activity is reduced</li>
+<li>parasympathetic influence is increased</li>
+</ul>
+<p>REM sleep creates greater cardiovascular variability.</p>
+<p>Toward habitual waking:</p>
+<ul>
+<li>sympathetic activity begins increasing</li>
+<li>blood pressure starts rising</li>
+<li>heart rate begins rising</li>
+<li>vascular tone changes</li>
+</ul>
+<p>The morning increase reflects both endogenous circadian timing and behavioral effects such as awakening, standing, moving, eating, and emotional stimulation. Circadian experiments indicate that cardiovascular regulation has an endogenous time-of-day component, while circadian misalignment can raise cardiovascular risk markers.</p>
+</section>
+<section class="level3" id="respiratory-system">
+<h4>Respiratory system</h4>
+<p>During sleep:</p>
+<ul>
+<li>ventilation is altered</li>
+<li>responses to low oxygen and high carbon dioxide are reduced</li>
+<li>upper-airway muscle activity falls</li>
+<li>breathing is relatively regular in stable non-REM sleep</li>
+<li>breathing becomes more variable in REM sleep</li>
+</ul>
+<p>These normal changes become clinically important when airway anatomy or respiratory control is impaired, as in <a href="https://academic.oup.com/sleep/article/47/12/zsae164/7718391" rel="noopener noreferrer" target="_blank">obstructive sleep apnea</a>.</p>
+</section>
+<section class="level3" id="kidney-and-bladder">
+<h4>Kidney and bladder</h4>
+<p>Healthy sleep usually coincides with lower urine production. Circadian and sleep-associated mechanisms influence:</p>
+<ul>
+<li>renal blood flow</li>
+<li>glomerular filtration</li>
+<li>sodium excretion</li>
+<li>urine concentration</li>
+<li>bladder filling</li>
+</ul>
+<p>Vasopressin contributes to nighttime water conservation. The kidney also contains a local <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4073428/" rel="noopener noreferrer" target="_blank">circadian clock</a> that helps organize electrolyte transport. However, a precise human gene-by-gene overnight kidney timeline has not been established through repeated healthy-kidney sampling.</p>
+</section>
+<section class="level3" id="research-needed">
+<h4>Research needed</h4>
+<p>Repeated noninvasive <a href="https://pubmed.ncbi.nlm.nih.gov/38174377/" rel="noopener noreferrer" target="_blank">human measurements</a> combining circadian phase, renal filtration, electrolyte handling, hormone concentrations, and tissue-level molecular markers would clarify which renal rhythms are driven by the kidney clock versus sleep, posture, fasting, and systemic hormones.</p>
+</section>
+</section>
+<section class="level2" id="phase-2-waking-transition">
+<h3 id="phase-2-waking-transition-2">Phase 2: Waking transition</h3>
+<p><strong>Illustrative clock time: 7:00–9:00 a.m.</strong> - Wake-state switching</p>
+<p>Wakefulness does not emerge from a single “wake center.” It arises from <a href="https://www.jneurosci.org/content/43/22/4075" rel="noopener noreferrer" target="_blank">interacting brain systems</a> using neurotransmitters including:</p>
+<ul>
+<li>Norepinephrine - a chemical messenger used by the nervous system to increase alertness and readiness for action. Higher norepinephrine activity helps support attention, vigilance, heart-rate and blood-pressure responses, and the shift from sleep toward wakefulness.</li>
+<li>Histamine - chemical messenger involved in immune responses, stomach acid regulation, and brain arousal. Histamine-producing neurons help maintain alertness and wakefulness, which is why many antihistamines can cause drowsiness.</li>
+<li>Serotonin - a chemical messenger involved in mood, attention, body temperature, digestion, pain signaling, and sleep-wake regulation. Serotonin-producing neurons are generally more active during wakefulness, less active during non-REM sleep, and least active during REM sleep, so serotonin helps support wake-state regulation rather than acting as a simple “happiness chemical.”</li>
+<li>Acetylcholine - a chemical messenger used by the nervous system to support attention, learning, memory, muscle activation, and autonomic regulation. Acetylcholine activity helps support cortical activation and alertness during wakefulness, and it also becomes especially active during REM sleep, when the brain is internally active even though most skeletal-muscle movement is inhibited.</li>
+<li>dopamine</li>
+<li>orexin</li>
+</ul>
+<p>Orexin, also called hypocretin, is produced by neurons in the lateral hypothalamic region. The gene <strong>HCRT</strong> encodes the orexin precursor. Orexin neurons help stabilize wakefulness by supporting multiple arousal networks. Loss of orexin signaling causes narcolepsy type 1, providing strong human evidence that this pathway is essential for stable wakefulness.</p>
+<p>Sleep-promoting neurons in the preoptic region release inhibitory signals including GABA and galanin. They suppress arousal systems during sleep. The transition between wake and sleep is sometimes described as a flip-flop switch because mutually inhibitory systems can create relatively stable sleep or wake states. The actual network is more distributed and contains additional feedback loops.</p>
+<section class="level3" id="sleep-inertia">
+<h4>Sleep inertia</h4>
+<p>Cognitive performance may remain impaired immediately after waking. Sleep inertia may include:</p>
+<ul>
+<li>slowed reaction time</li>
+<li>reduced vigilance</li>
+<li>impaired working memory</li>
+<li>subjective grogginess</li>
+<li>reduced decision quality</li>
+</ul>
+<p>Its severity depends on:</p>
+<ul>
+<li>sleep stage at awakening</li>
+<li>prior sleep loss</li>
+<li>circadian phase</li>
+<li>duration of the sleep episode</li>
+<li>individual differences</li>
+</ul>
+</section>
+<section class="level3" id="cortisol-awakening-response">
+<h4>Cortisol awakening response</h4>
+<p>In many healthy adults, cortisol increases rapidly during the first 30–45 minutes after awakening. This awakening response is superimposed on the underlying circadian cortisol rhythm. It is influenced by:</p>
+<ul>
+<li>expected demands of the day</li>
+<li>light</li>
+<li>sleep timing</li>
+<li>chronic stress</li>
+<li>sampling method</li>
+<li>individual variability</li>
+</ul>
+<p>It should not be assumed to occur identically every morning in every person.</p>
+</section>
+<section class="level3" id="morning-light">
+<h4>Morning light</h4>
+<p>Light after waking:</p>
+<ul>
+<li>suppresses remaining melatonin</li>
+<li>increases alerting signals</li>
+<li>reinforces the timing of the SCN</li>
+<li>can advance circadian phase when received in the appropriate phase-response window</li>
+</ul>
+<p>Light also has acute effects on alertness that are not fully explained by melatonin suppression.</p>
+</section>
+<section class="level3" id="cardiovascular-transition">
+<h4>Cardiovascular transition</h4>
+<p>Standing and moving produce immediate changes in:</p>
+<ul>
+<li>venous return</li>
+<li>heart rate</li>
+<li>vascular tone</li>
+<li>blood pressure</li>
+<li>catecholamine activity</li>
+</ul>
+<p>These behavioral effects combine with the endogenous morning cardiovascular rhythm.</p>
+</section>
+<section class="level3" id="metabolic-transition">
+<h4>Metabolic transition</h4>
+<p>The liver shifts from an overnight fasting pattern toward processing incoming nutrients. Before eating, the body maintains circulating glucose using:</p>
+<ul>
+<li>hepatic glycogen breakdown</li>
+<li>gluconeogenesis</li>
+<li>hormonal coordination involving glucagon, insulin, cortisol, and catecholamines</li>
+</ul>
+<p>After breakfast, insulin normally rises and suppresses hepatic glucose output while promoting glucose uptake and storage.</p>
+</section>
+</section>
+<section class="level2" id="phase-3-biological-morning">
+<h3 id="phase-3-biological-morning-2">Phase 3: Biological morning</h3>
+<p><strong>Illustrative clock time: 9:00 a.m.–noon</strong> - Alertness and cognition</p>
+<p>After sleep inertia dissipates, performance is supported by:</p>
+<ul>
+<li>relatively low sleep pressure</li>
+<li>increasing circadian wake promotion</li>
+<li>rising core temperature</li>
+<li>daylight exposure</li>
+<li>physical movement</li>
+</ul>
+<p>The specific time of best performance varies by chronotype and task. A morning-type person may perform best earlier than an evening-type person. Prior sleep duration can overwhelm modest time-of-day advantages.</p>
+<section class="level3" id="glucose-regulation">
+<h4>Glucose regulation</h4>
+<p>Human controlled studies show that glucose tolerance commonly varies by circadian phase. For the same meal, the body often handles glucose more effectively during the biological morning than during the biological evening or night. Mechanisms include circadian variation in:</p>
+<ul>
+<li>pancreatic beta-cell responsiveness</li>
+<li>insulin secretion</li>
+<li>insulin sensitivity</li>
+<li>hepatic glucose production</li>
+<li>skeletal-muscle glucose uptake</li>
+</ul>
+<p>The pancreas contains a local molecular clock. Relevant beta-cell mechanisms include:</p>
+<ul>
+<li>glucose entry and sensing</li>
+<li>glycolysis</li>
+<li>mitochondrial ATP generation</li>
+<li>ATP-sensitive potassium channels</li>
+<li>membrane depolarization</li>
+<li>calcium entry</li>
+<li>insulin-vesicle release</li>
+</ul>
+<p>Genes and proteins involved include:</p>
+<ul>
+<li><strong>INS</strong>, encoding insulin</li>
+<li><strong>GCK</strong>, involved in glucose sensing</li>
+<li><strong>KCNJ11</strong> and <strong>ABCC8</strong>, components of the ATP-sensitive potassium channel</li>
+<li>calcium-channel and exocytosis machinery</li>
+<li>core clock genes including <strong>ARNTL</strong>, <strong>CLOCK</strong>, <strong>PER</strong>, and <strong>CRY</strong></li>
+</ul>
+<p>The exact 24-hour phase of every pancreatic gene has not been mapped in healthy living humans.</p>
+</section>
+<section class="level3" id="verified-conclusion">
+<h4>Verified conclusion</h4>
+<p>The <a href="https://www.pnas.org/doi/pdf/10.1073/pnas.1418955112" rel="noopener noreferrer" target="_blank">pancreatic response</a> to a meal changes with circadian phase.</p>
+</section>
+<section class="level3" id="research-needed-1">
+<h4>Research needed</h4>
+<p>Repeated sampling using human islet biomarkers, metabolic-clamp studies, circadian protocols, and ethically obtained tissue data could better connect molecular pancreatic phase to whole-body glucose tolerance.</p>
+</section>
+<section class="level3" id="liver">
+<h4>Liver</h4>
+<p>The liver is one of the body’s central metabolic timing organs. In the fed state, it can prioritize:</p>
+<ul>
+<li>glycogen synthesis</li>
+<li>nutrient processing</li>
+<li>lipid synthesis when energy is abundant</li>
+<li>amino-acid metabolism</li>
+<li>bile production</li>
+<li>plasma-protein production</li>
+<li>xenobiotic metabolism</li>
+</ul>
+<p>In the fasting state, it can prioritize:</p>
+<ul>
+<li>glycogen breakdown</li>
+<li>gluconeogenesis</li>
+<li>fatty-acid oxidation</li>
+<li>ketone production during prolonged fasting</li>
+</ul>
+<p>Important hepatic regulators include:</p>
+<ul>
+<li><strong>ARNTL/BMAL1</strong></li>
+<li><strong>CLOCK</strong></li>
+<li><strong>PER1–3</strong></li>
+<li><strong>CRY1–2</strong></li>
+<li><strong>PPARA</strong></li>
+<li><strong>PPARGC1A</strong></li>
+<li><strong>SREBF1</strong></li>
+<li><strong>FOXO1</strong></li>
+<li><strong>CREB1</strong></li>
+<li><strong>HMGCR</strong></li>
+<li>cytochrome P450 enzymes</li>
+<li><strong>AMPK</strong></li>
+<li><strong>SIRT1</strong></li>
+<li><strong>mTOR</strong></li>
+</ul>
+<p>These do not all simply rise together in the morning. They belong to interacting pathways influenced by:</p>
+<ul>
+<li>clock phase</li>
+<li>insulin</li>
+<li>glucagon</li>
+<li>nutrients</li>
+<li>fasting</li>
+<li>cortisol</li>
+<li>cellular energy status</li>
+</ul>
+<p>Meal timing is a strong synchronizer of the <a href="https://www.nature.com/articles/s41575-023-00792-1" rel="noopener noreferrer" target="_blank">liver clock</a>. When food repeatedly arrives at an unusual biological time, liver rhythms may shift relative to the SCN.</p>
+</section>
+<section class="level3" id="gastrointestinal-tract">
+<h4>Gastrointestinal tract</h4>
+<p>After waking and <a href="https://www.cell.com/current-biology/fulltext/S0960-9822%2817%2930504-3" rel="noopener noreferrer" target="_blank">eating</a>:</p>
+<ul>
+<li>gastric and intestinal activity increases</li>
+<li>digestive secretions respond to food</li>
+<li>intestinal nutrient transport is activated</li>
+<li>incretin hormones contribute to insulin release</li>
+<li>the gastrocolic response can increase colonic motility</li>
+</ul>
+<p>Relevant hormones include:</p>
+<ul>
+<li>GLP-1</li>
+<li>GIP</li>
+<li>Gastrin</li>
+<li>Cholecystokinin</li>
+<li>Ghrelin</li>
+<li>peptide YY</li>
+</ul>
+<p>The gastrointestinal system contains local circadian oscillators, but food produces powerful immediate effects that can conceal or amplify endogenous rhythms.</p>
+</section>
+<section class="level3" id="immune-system">
+<h4>Immune system</h4>
+<p>The immune system does not possess one single “night mode.” Different components follow different rhythms:</p>
+<ul>
+<li>cell release from bone marrow</li>
+<li>movement through blood</li>
+<li>adhesion to vessel walls</li>
+<li>entry into tissues</li>
+<li>migration to lymph nodes</li>
+<li>cytokine production</li>
+<li>antigen presentation</li>
+<li>adaptive immune activation</li>
+</ul>
+<p>Sleep generally supports the coordinated redistribution of immune cells and the formation of <a href="https://academic.oup.com/jimmunol/article-abstract/187/1/283/7973833" rel="noopener noreferrer" target="_blank">immunological memory</a>. Circadian timing independently regulates immune trafficking and responsiveness. Some circulating immune-cell numbers fall during sleep because cells move out of blood rather than because the body has fewer immune cells. Human evidence supports strong interactions among sleep, circadian timing, inflammation, and immune defense, but the exact organ-by-organ cellular sequence remains incomplete.</p>
+</section>
+</section>
+<section class="level2" id="phase-4-midday-and-early-afternoon">
+<h3 id="phase-4-midday-and-early-afternoon-2">Phase 4: Midday and early afternoon</h3>
+<p><strong>Illustrative clock time: noon–3:00 p.m.</strong> - Alertness dip</p>
+<p>Many adults experience reduced alertness in the early afternoon. This can occur even without lunch, indicating an endogenous circadian contribution. Eating, meal size, sleep debt, and inactivity can strengthen the effect. This period demonstrates that circadian wake drive does not simply rise steadily from morning until bedtime.</p>
+<p><strong>Metabolism</strong></p>
+<p><a href="https://link.springer.com/content/pdf/10.1186/s12966-024-01693-5.pdf" rel="noopener noreferrer" target="_blank">Glucose tolerance</a> may begin declining relative to biological morning, although it generally remains better than during the biological night. The response depends on:</p>
+<ul>
+<li>meal composition</li>
+<li>previous meals</li>
+<li>physical activity</li>
+<li>sleep history</li>
+<li>chronotype</li>
+<li>individual metabolic health</li>
+</ul>
+<p><strong>Liver drug metabolism</strong></p>
+<p>Some enzymes involved in drug metabolism show daily rhythms. These include members of cytochrome P450 pathways, conjugation enzymes, transporters, and hepatic metabolic regulators. However, much of the detailed gene-level chronopharmacology evidence comes from animals or indirect human observations.</p>
+<p><strong>Verified conclusion</strong></p>
+<p>The pharmacokinetics and effects of some medications vary with administration time.</p>
+<p><strong>Unverified generalization</strong></p>
+<p>That every medication has a predictable universal “best time” based on clock-gene expression.</p>
+<p><strong>Research needed</strong></p>
+<p>Medication-specific human trials comparing efficacy, toxicity, absorption, distribution, metabolism, and elimination across circadian phases.</p>
+<p><strong>Cardiovascular system</strong></p>
+<p>Cardiovascular variables continue to change across the day:</p>
+<ul>
+<li>blood pressure</li>
+<li>vascular resistance</li>
+<li>endothelial function</li>
+<li>coagulation</li>
+<li>platelet activity</li>
+<li>heart rate</li>
+<li>autonomic balance</li>
+</ul>
+<p>These rhythms do not necessarily peak together. A person’s measured blood pressure at midday reflects:</p>
+<ul>
+<li>endogenous circadian phase</li>
+<li>posture</li>
+<li>movement</li>
+<li>meals</li>
+<li>caffeine</li>
+<li>stress</li>
+<li>temperature</li>
+<li>medication</li>
+<li>prior sleep</li>
+</ul>
+</section>
+<section class="level2" id="phase-5-late-biological-day">
+<h3 id="phase-5-late-biological-day-2">Phase 5: Late biological day</h3>
+<p><strong>Illustrative clock time: 3:00–7:00 p.m.</strong> - Core temperature</p>
+<p>Core temperature is relatively high during the late biological day. This is associated with:</p>
+<ul>
+<li>greater tissue warmth</li>
+<li>faster nerve conduction</li>
+<li>altered muscle mechanics</li>
+<li>greater joint mobility</li>
+<li>reduced passive stiffness</li>
+</ul>
+<p>Many physical-performance measures are often better later in the biological day than early in the morning, though training habits and chronotype can shift observed performance.</p>
+<p><strong>Skeletal muscle</strong></p>
+<p>Skeletal muscle contains a local circadian clock and responds strongly to exercise and meals. Major functions changing across the day include:</p>
+<ul>
+<li>glucose uptake</li>
+<li>glycogen storage and use</li>
+<li>fatty-acid oxidation</li>
+<li>mitochondrial energy production</li>
+<li>contractile force</li>
+<li>protein synthesis</li>
+<li>protein breakdown</li>
+<li>inflammatory and repair signaling</li>
+</ul>
+<p>Important regulators include:</p>
+<ul>
+<li><strong>ARNTL/BMAL1</strong></li>
+<li><strong>CLOCK</strong></li>
+<li><strong>PER</strong></li>
+<li><strong>CRY</strong></li>
+<li><strong>PPARGC1A/PGC-1α</strong></li>
+<li><strong>AMPK</strong></li>
+<li><strong>mTORC1</strong></li>
+<li><strong>AKT</strong></li>
+<li><strong>FOXO</strong> transcription factors</li>
+<li><strong>SIRT1</strong></li>
+<li><strong>TFAM</strong></li>
+<li>insulin-responsive glucose transport pathways</li>
+<li><strong>Exercise response</strong></li>
+</ul>
+<p>Exercise can act as a timing signal for skeletal muscle and possibly other peripheral tissues. Exercise activates pathways according to:</p>
+<ul>
+<li>Intensity</li>
+<li>Duration</li>
+<li>resistance versus endurance work</li>
+<li>energy availability</li>
+<li>muscle damage</li>
+<li>prior training</li>
+<li>circadian phase</li>
+</ul>
+<p>It is inaccurate to claim that muscles only build or repair during sleep. Muscle protein synthesis and remodeling can occur throughout the day. Sleep supports recovery by providing a coordinated hormonal, neural, and metabolic environment, but the timing of training and protein intake also matters.</p>
+<p><strong>Adipose tissue</strong></p>
+<p>Adipose tissue is an active endocrine and metabolic organ. It changes:</p>
+<ul>
+<li>fatty-acid storage</li>
+<li>lipolysis</li>
+<li>insulin responsiveness</li>
+<li>adipokine release</li>
+<li>inflammatory signaling</li>
+<li>thermogenic activity in certain fat depots</li>
+</ul>
+<p>Relevant signals include:</p>
+<ul>
+<li>insulin</li>
+<li>catecholamines</li>
+<li>cortisol</li>
+<li>growth hormone</li>
+<li>leptin</li>
+<li>nutrient availability</li>
+<li>local clock genes</li>
+</ul>
+<p>Detailed circadian adipose-tissue transcriptomes exist from research samples, but a complete healthy-human daily functional map remains incomplete.</p>
+</section>
+<section class="level2" id="phase-6-evening-transition">
+<h3 id="phase-6-evening-transition-2">Phase 6: Evening transition</h3>
+<p><strong>Illustrative clock time: 7:00–10:00 p.m.</strong> - Melatonin onset</p>
+<p>Under dim light, melatonin normally begins rising before habitual sleep. This event is called dim-light melatonin onset and is commonly used as a marker of internal circadian phase. Its clock time varies substantially among people. Bright evening light can:</p>
+<ul>
+<li>suppress melatonin</li>
+<li>delay melatonin onset</li>
+<li>delay sleep timing</li>
+<li>increase alertness</li>
+</ul>
+<p>The effect depends on biological timing, intensity, wavelength, duration, and previous light exposure.</p>
+<p><strong>Temperature and heat loss</strong></p>
+<p>Before sleep, blood flow often increases in distal skin regions such as the hands and feet. This supports heat transfer from the core to the environment. As heat is lost:</p>
+<ul>
+<li>core temperature falls</li>
+<li>sleep propensity increases</li>
+<li>autonomic balance shifts</li>
+</ul>
+<p>Warming the skin can paradoxically support core cooling by promoting vasodilation. Human research links pre-sleep temperature changes with sleep onset and autonomic changes. (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10292981/?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank">PMC</a>)</p>
+<p><strong>Sleep pressure</strong></p>
+<p>Homeostatic sleep pressure has accumulated during wakefulness. Adenosine is one contributor. During waking neural and metabolic activity, extracellular adenosine signaling changes in sleep-regulatory regions. Caffeine promotes alertness primarily by blocking adenosine receptors rather than eliminating the underlying sleep need. Genes encoding major adenosine receptors include:</p>
+<ul>
+<li><strong>ADORA1</strong></li>
+<li><strong>ADORA2A</strong></li>
+</ul>
+<p>Adenosine is not the entire sleep homeostat. The full molecular representation of Process S remains unresolved.</p>
+<p><strong>Research needed</strong></p>
+<p>Human studies capable of safely measuring regional brain metabolites and receptor signaling across extended waking and recovery sleep would better define how sleep need is encoded.</p>
+<p><strong>Glucose tolerance</strong></p>
+<p>During the biological evening and night:</p>
+<ul>
+<li>insulin secretion may respond differently</li>
+<li>insulin sensitivity is often reduced</li>
+<li>post-meal glucose may remain elevated longer</li>
+</ul>
+<p>This means the same meal can produce a different physiological response depending on circadian phase. This is not proof that all evening eating is inherently harmful. Meal timing must be interpreted with:</p>
+<ul>
+<li>total energy intake</li>
+<li>food composition</li>
+<li>exercise</li>
+<li>sleep schedule</li>
+<li>individual metabolic status</li>
+</ul>
+<section class="level3" id="peripheral-clock-conflict">
+<h4>Peripheral-clock conflict</h4>
+<p>A late meal may strongly signal “active feeding period” to the liver, pancreas, gut, muscle, and adipose tissue while dim light and melatonin signal “biological night.” Repeated conflicts can create internal desynchrony.<br/>
+<br/>
+<strong>Phase 7: Sleep onset and early sleep</strong></p>
+</section>
+</section>
+<section class="level2" id="phase-7-sleep-onset-and-early-sleep">
+<h3 id="phase-7-sleep-onset-and-early-sleep-2">Phase 7: Sleep onset and early sleep</h3>
+<p>Sleep occurs when several conditions converge:</p>
+<ul>
+<li>circadian wake promotion weakens</li>
+<li>homeostatic sleep pressure is high</li>
+<li>sleep-promoting networks inhibit arousal networks</li>
+<li>environmental stimulation declines</li>
+<li>posture and behavior permit sleep</li>
+</ul>
+<p>Sleep is not caused by melatonin alone, adenosine alone, darkness alone, or fatigue alone.</p>
+<p><strong>N1 sleep</strong></p>
+<p>N1 is the transition from wakefulness into sleep. Features include:</p>
+<ul>
+<li>reduced responsiveness</li>
+<li>slowing eye movements</li>
+<li>changing EEG patterns</li>
+<li>reduced muscle activity</li>
+<li>easy awakening</li>
+</ul>
+<p><strong>N2 sleep</strong></p>
+<p>N2 commonly occupies the largest proportion of adult sleep. It includes:</p>
+<ul>
+<li>sleep spindles</li>
+<li>K-complexes</li>
+<li>reduced responsiveness</li>
+<li>further changes in muscle and autonomic activity</li>
+</ul>
+<p><strong>Sleep spindles</strong></p>
+<p>Sleep spindles are brief oscillatory EEG events generated through thalamocortical networks. They are associated with:</p>
+<ul>
+<li>sensory gating</li>
+<li>sleep stability</li>
+<li>memory-related processing</li>
+</ul>
+<p>Their presence is verified. Their precise causal role in every form of memory is not fully established.</p>
+<p><strong>K-complexes</strong></p>
+<p>K-complexes are large EEG events that can occur spontaneously or in response to stimuli. They may participate in:</p>
+<ul>
+<li>sleep protection</li>
+<li>cortical state regulation</li>
+<li>processing of external information without full awakening</li>
+</ul>
+<p><strong>N3 sleep</strong></p>
+<p>N3 is characterized by high-amplitude slow-wave activity. Compared with wakefulness, stable N3 generally includes:</p>
+<ul>
+<li>reduced heart rate</li>
+<li>reduced blood pressure</li>
+<li>low sympathetic activity</li>
+<li>increased parasympathetic influence</li>
+<li>reduced responsiveness to the environment</li>
+<li>strong homeostatic discharge of slow-wave activity</li>
+</ul>
+<p>Slow-wave activity is usually greatest early in the sleep period because homeostatic sleep pressure is then highest.</p>
+<p><strong>Growth hormone</strong></p>
+<p>A major growth-hormone pulse commonly occurs shortly after sleep onset and is associated with early slow-wave sleep. Growth hormone is released from the anterior pituitary. Its regulation involves:</p>
+<ul>
+<li>growth-hormone-releasing hormone</li>
+<li>somatostatin</li>
+<li>sleep state</li>
+<li>sex</li>
+<li>age</li>
+<li>nutrition</li>
+<li>exercise</li>
+</ul>
+<p>Growth hormone influences:</p>
+<ul>
+<li>protein metabolism</li>
+<li>lipid mobilization</li>
+<li>growth signaling</li>
+<li>liver production of IGF-1</li>
+<li>tissue remodeling</li>
+</ul>
+<p>The common phrase “deep sleep repairs the body” is directionally useful but too broad to be a molecular description.</p>
+<p>Verified facts include:</p>
+<ul>
+<li>early sleep is associated with a major growth-hormone pulse</li>
+<li>sleep changes autonomic and metabolic conditions</li>
+<li>inadequate sleep impairs recovery and metabolic regulation</li>
+</ul>
+<p>Not fully verified is a comprehensive human sequence showing every tissue-repair gene being activated specifically by N3 sleep.</p>
+<p><strong>Cardiovascular state</strong></p>
+<p>During stable non-REM sleep:</p>
+<ul>
+<li>heart rate falls</li>
+<li>arterial pressure falls</li>
+<li>cardiac output changes</li>
+<li>sympathetic activity decreases</li>
+<li>parasympathetic influence increases</li>
+</ul>
+<p>Brief arousals can cause rapid surges in:</p>
+<ul>
+<li>heart rate</li>
+<li>blood pressure</li>
+<li>sympathetic activity</li>
+</ul>
+<p>Sleep fragmentation can therefore repeatedly interrupt the normal cardiovascular sleep state.</p>
+<p><strong>Respiratory state</strong></p>
+<p>During non-REM sleep:</p>
+<ul>
+<li>ventilatory drive is reduced compared with wakefulness</li>
+<li>airway resistance may increase</li>
+<li>upper-airway dilator muscle activity falls</li>
+<li>responses to carbon dioxide and oxygen change</li>
+</ul>
+<p>Stable breathing remains adequate in healthy adults.</p>
+<p><strong>Immune redistribution</strong></p>
+<p>Early nocturnal sleep is associated with changes in immune-cell trafficking and signaling. These may support:</p>
+<ul>
+<li>movement of lymphocytes</li>
+<li>interaction of antigen-presenting cells and T cells</li>
+<li>cytokine environments favorable to adaptive immune memory</li>
+</ul>
+<p>The strongest conclusion is that normal sleep supports immune regulation and vaccine responses. It would be premature to specify a universal minute-by-minute gene activation sequence for every immune-cell subtype.</p>
+</section>
+<section class="level2" id="phase-8-middle-and-late-sleep">
+<h3 id="phase-8-middle-and-late-sleep-2">Phase 8: Middle and late sleep</h3>
+<p><strong>Illustrative clock time: 1:00–4:00 a.m., then returning toward morning</strong> - Repeated cycling</p>
+<p>Sleep continues to alternate between:</p>
+<ul>
+<li>NREM stages</li>
+<li>REM sleep</li>
+<li>brief transitions and arousals</li>
+</ul>
+<p>The cycles are not identical. As the sleep period continues:</p>
+<ul>
+<li>homeostatic slow-wave pressure declines</li>
+<li>N3 generally decreases</li>
+<li>REM episodes generally lengthen</li>
+<li>circadian signals begin moving toward waking</li>
+</ul>
+<p><strong>Memory processing</strong></p>
+<p>Human evidence supports a role for sleep in memory consolidation. Relevant processes include:</p>
+<ul>
+<li>hippocampal reactivation</li>
+<li>cortical slow oscillations</li>
+<li>thalamic sleep spindles</li>
+<li>hippocampal sharp-wave ripples</li>
+<li>changes in synaptic strength</li>
+<li>REM-related network activity</li>
+</ul>
+<p>A leading model proposes coordinated communication among the hippocampus, thalamus, and cortex during NREM sleep.</p>
+<p>However:</p>
+<ul>
+<li>no single sleep stage stores all memories</li>
+<li>not every memory benefits equally</li>
+<li>emotional, declarative, procedural, and perceptual learning may depend on different sleep features</li>
+<li>many detailed causal mechanisms come from animal or intracranial studies</li>
+</ul>
+<p><strong>Synaptic regulation</strong></p>
+<p>Sleep is associated with changes in synaptic plasticity. The synaptic-homeostasis hypothesis proposes that waking produces widespread synaptic strengthening and sleep helps renormalize synaptic strength while preserving important information. Evidence supports sleep-related synaptic remodeling, but a universal whole-brain reduction in all synapses has not been conclusively demonstrated in humans.</p>
+<p><strong>Research needed</strong></p>
+<p>Longitudinal human imaging, electrophysiology, molecular biomarkers, and selective sleep-stage manipulation are needed to determine which synapses strengthen, weaken, or remain stable.</p>
+<p><strong>Brain-fluid movement and waste clearance</strong></p>
+<p>Sleep is associated with changes in:</p>
+<ul>
+<li>neural activity</li>
+<li>cerebral blood volume</li>
+<li>cerebrospinal-fluid movement</li>
+<li>interstitial-fluid exchange</li>
+</ul>
+<p>The glymphatic model proposes that cerebrospinal fluid exchanges with interstitial fluid along pathways influenced by astrocytes and perivascular spaces. The water channel <strong>AQP4</strong> is concentrated in astrocytic endfeet and is implicated in this process.</p>
+<p>Animal studies have demonstrated greater clearance of certain metabolites during sleep or anesthesia than during wakefulness. Human imaging studies support sleep-related changes in cerebrospinal-fluid dynamics and clearance, but the complete mechanism and its long-term significance remain unresolved.</p>
+<p>It is therefore too strong to say:</p>
+<p>“Deep sleep turns on AQP4 and washes beta-amyloid out of the brain.”</p>
+<p>A more accurate statement is:</p>
+<p>Sleep state changes neural, vascular, and cerebrospinal-fluid dynamics in ways that may facilitate brain clearance; AQP4 localization appears mechanistically important, but the complete causal sequence in healthy living humans is not yet mapped.</p>
+<p><strong>Research needed</strong></p>
+<p>Human studies combining sleep staging, dynamic MRI, safe molecular tracers, AQP4-related imaging or biomarkers, body-position measurements, long-term cognitive outcomes would clarify how much clearance occurs, during which stages, and with what health consequences.</p>
+<p><strong>DNA repair</strong></p>
+<p>Wakefulness and neural activity can be associated with metabolic stress and DNA damage. Animal and cellular research indicates that sleep supports DNA-maintenance processes. However, direct repeated measurement of DNA repair across multiple living human organs during natural sleep is not currently available.</p>
+<p><strong>Verified statement</strong></p>
+<p>Sleep loss changes gene expression and increases markers of cellular stress in humans.</p>
+<p><strong>Mechanistically incomplete statement</strong></p>
+<p>Sleep activates a universal body-wide DNA-repair shift at a specific clock hour.</p>
+<p><strong>Research needed</strong></p>
+<p>Tissue-specific human biomarkers and carefully controlled sleep-versus-circadian experiments are needed.</p>
+<p><strong>Autophagy</strong></p>
+<p>Autophagy removes or recycles damaged cellular material. It is regulated by:</p>
+<ul>
+<li>nutrient status</li>
+<li>AMPKmTOR</li>
+<li>cellular energy state</li>
+<li>tissue type</li>
+<li>circadian timing</li>
+</ul>
+<p>Autophagy should not be described as a single process that simply turns on during sleep. Fasting and circadian phase can influence it independently of sleep. Current research does not provide a verified whole-body human autophagy schedule across natural sleep. Reviews continue to emphasize that the relationship between sleep and autophagy is complex and incompletely resolved. (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7617762/?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank">PMC</a>)</p>
+<p><strong>Protein synthesis and repair</strong></p>
+<p>Protein synthesis occurs throughout the day. It is regulated by:</p>
+<ul>
+<li>amino-acid availability</li>
+<li>insulin</li>
+<li>mechanical loading</li>
+<li>growth hormone and IGF signaling</li>
+<li>mTOR activity</li>
+<li>cellular damage</li>
+<li>tissue-specific clocks</li>
+</ul>
+<p>Sleep supports a recovery environment but does not produce one universal whole-body protein-synthesis switch.</p>
+</section>
+</section>
+<section class="level1" id="part-iii-the-organ-systems-across-the-full-day">
+<h2 id="part-iii-the-organ-systems-across-the-full-day-2">Part III: The organ systems across the full day</h2>
+<section class="level2" id="brain-and-nervous-system">
+<h3 id="brain-and-nervous-system-2">Brain and nervous system</h3>
+<p><strong>Biological day</strong></p>
+<p>The brain prioritizes:</p>
+<ul>
+<li>sensory processing</li>
+<li>movement</li>
+<li>attention</li>
+<li>working memory</li>
+<li>decision-making</li>
+<li>encoding new experiences</li>
+<li>interaction with the environment</li>
+</ul>
+<p>Wake-promoting neurotransmitter systems are active. Sleep pressure gradually accumulates.</p>
+<p><strong>Evening</strong></p>
+<ul>
+<li>melatonin rises</li>
+<li>circadian wake promotion declines</li>
+<li>temperature falls</li>
+<li>accumulated sleep pressure becomes more influential</li>
+</ul>
+<p><strong>Sleep</strong></p>
+<p>The brain changes state rather than shutting down. During sleep it cycles among:</p>
+<ul>
+<li>reduced sensory responsiveness</li>
+<li>thalamocortical oscillations</li>
+<li>hippocampal–cortical communication</li>
+<li>REM cortical activation</li>
+<li>altered autonomic control</li>
+<li>changes in fluid dynamics</li>
+<li>synaptic remodeling</li>
+</ul>
+<p><strong>Representative genes and pathways</strong></p>
+<ul>
+<li><strong>CLOCK</strong></li>
+<li><strong>ARNTL</strong></li>
+<li><strong>PER1–3</strong></li>
+<li><strong>CRY1–2</strong></li>
+<li><strong>NR1D1–2</strong></li>
+<li><strong>ROR family</strong></li>
+<li><strong>HCRT</strong></li>
+<li><strong>ADORA1</strong></li>
+<li><strong>ADORA2A</strong></li>
+<li><strong>AQP4</strong></li>
+<li><strong>BDNF</strong></li>
+<li><strong>FOS</strong></li>
+<li><strong>EGR1</strong></li>
+</ul>
+</section>
+<section class="level2" id="cardiovascular-system-1">
+<h3 id="cardiovascular-system-2">Cardiovascular system</h3>
+<p><strong>Biological morning</strong></p>
+<p>The system transitions toward activity:</p>
+<ul>
+<li>heart rate increases</li>
+<li>blood pressure increases</li>
+<li>sympathetic tone rises</li>
+<li>vascular and coagulation systems change</li>
+</ul>
+<p><strong>Biological day</strong></p>
+<p>Cardiovascular output responds to:</p>
+<ul>
+<li>posture</li>
+<li>activity</li>
+<li>temperature</li>
+<li>meals</li>
+<li>psychological demand</li>
+<li>exercise</li>
+</ul>
+<p><strong>Biological evening</strong></p>
+<p>Blood pressure may begin declining as activity falls and circadian phase advances.</p>
+<p><strong>Non-REM sleep</strong></p>
+<ul>
+<li>blood pressure normally dips</li>
+<li>heart rate falls</li>
+<li>sympathetic activity is reduced</li>
+<li>cardiac workload decreases</li>
+</ul>
+<p><strong>REM sleep</strong></p>
+<ul>
+<li>autonomic activity becomes more variable</li>
+<li>brief heart-rate and blood-pressure surges may occur</li>
+</ul>
+<p><strong>Representative pathways</strong></p>
+<ul>
+<li>adrenergic receptors</li>
+<li>nitric-oxide signaling</li>
+<li>renin–angiotensin–aldosterone signaling</li>
+<li>ion channels controlling cardiac conduction</li>
+<li>coagulation and platelet pathways</li>
+<li>endothelial clock genes</li>
+</ul>
+<p>A complete circadian map of all human cardiac proteins has not been established.</p>
+</section>
+<section class="level2" id="endocrine-system">
+<h3 id="endocrine-system-2">Endocrine system</h3>
+<p><strong>Cortisol</strong></p>
+<ul>
+<li>lowest near the early biological night</li>
+<li>rises during late sleep</li>
+<li>increases around awakening</li>
+<li>generally declines across the day</li>
+<li>can rise acutely during stress or exercise</li>
+</ul>
+<p><strong>Melatonin</strong></p>
+<ul>
+<li>low during the biological day</li>
+<li>rises in dim light before habitual sleep</li>
+<li>remains elevated during much of biological night</li>
+<li>falls toward biological morning</li>
+<li>is suppressed by appropriately timed light</li>
+</ul>
+<p><strong>Growth hormone</strong></p>
+<ul>
+<li>a major pulse is linked to early sleep and slow-wave sleep</li>
+<li>secretion also depends on age, sex, exercise, nutrition, and other factors</li>
+</ul>
+<p><strong>Prolactin</strong></p>
+<p>Prolactin generally increases during sleep, with a strong sleep-dependent component.</p>
+<p><strong>Thyroid-stimulating hormone</strong></p>
+<p>TSH follows a daily rhythm and is influenced by sleep. Sleep onset suppresses the nocturnal TSH rise relative to continued wakefulness.</p>
+<p><strong>Sex hormones</strong></p>
+<p>Testosterone in men commonly rises during sleep and is related to sleep duration and continuity.</p>
+<p>Reproductive hormone patterns in women depend strongly on:</p>
+<ul>
+<li>menstrual phase</li>
+<li>ovulatory status</li>
+<li>pregnancy</li>
+<li>menopause</li>
+<li>hormonal medications</li>
+</ul>
+<p>A single universal female 24-hour reproductive map would therefore be misleading.</p>
+</section>
+<section class="level2" id="liver-and-metabolic-control">
+<h3 id="liver-and-metabolic-control-2">Liver and metabolic control</h3>
+<p><strong>Fasting period</strong></p>
+<p>The liver helps maintain blood glucose through:</p>
+<ul>
+<li>glycogenolysis</li>
+<li>gluconeogenesis</li>
+</ul>
+<p>With longer fasting it increasingly contributes to:</p>
+<ul>
+<li>fatty-acid oxidation</li>
+<li>ketogenesis</li>
+</ul>
+<p><strong>Fed period</strong></p>
+<p>It responds to insulin and nutrients by promoting:</p>
+<ul>
+<li>glycogen synthesis</li>
+<li>nutrient processing</li>
+<li>lipid synthesis when energy is excessive</li>
+<li>bile production</li>
+<li>protein synthesis</li>
+</ul>
+<p><strong>Circadian organization</strong></p>
+<p>The liver clock changes the timing and responsiveness of metabolic pathways. Meal timing can shift this clock. Representative genes include:</p>
+<ul>
+<li><strong>PPARA</strong></li>
+<li><strong>PPARGC1A</strong></li>
+<li><strong>FOXO1</strong></li>
+<li><strong>G6PC</strong></li>
+<li><strong>PCK1</strong></li>
+<li><strong>SREBF1</strong></li>
+<li><strong>HMGCR</strong></li>
+<li>cytochrome P450 genes</li>
+<li>core clock genes</li>
+</ul>
+<p>The precise phase of these genes varies with feeding schedule and study conditions.</p>
+</section>
+<section class="level2" id="pancreas-and-glucose-control">
+<h3 id="pancreas-and-glucose-control-2">Pancreas and glucose control</h3>
+<p><strong>Biological morning</strong></p>
+<p>Insulin secretion and glucose tolerance are generally more favorable.</p>
+<p><strong>Biological evening and night</strong></p>
+<p>The same meal may produce:</p>
+<ul>
+<li>lower insulin effectiveness</li>
+<li>impaired beta-cell response</li>
+<li>higher post-meal glucose</li>
+</ul>
+<p><strong>Important pathways</strong></p>
+<ul>
+<li>glucose sensing</li>
+<li>mitochondrial ATP generation</li>
+<li>ATP-sensitive potassium channels</li>
+<li>calcium signaling</li>
+<li>insulin-vesicle exocytosis</li>
+<li>incretin signaling</li>
+<li>local circadian clock</li>
+</ul>
+<p>Circadian misalignment has been shown experimentally to worsen human glucose regulation and other cardiometabolic measures. (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11245155/?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank">PMC</a>)</p>
+</section>
+<section class="level2" id="gastrointestinal-system">
+<h3 id="gastrointestinal-system-2">Gastrointestinal system</h3>
+<p><strong>Active feeding period</strong></p>
+<ul>
+<li>motility responds to food</li>
+<li>digestive secretions increase</li>
+<li>nutrient absorption rises</li>
+<li>incretin hormones coordinate metabolism</li>
+<li>bile acids participate in digestion and signaling</li>
+</ul>
+<p><strong>Overnight fasting and sleep</strong></p>
+<ul>
+<li>meal-driven activity is absent</li>
+<li>gastrointestinal motility patterns change</li>
+<li>reflux protection and swallowing frequency change</li>
+<li>tissue clocks continue cycling</li>
+</ul>
+<p>The microbiome also shows daily variation, but microbial rhythms are strongly shaped by feeding and host behavior. Current human evidence does not justify assigning a precise universal clock time to every microbial species or metabolite.</p>
+</section>
+<section class="level2" id="kidneys">
+<h3 id="kidneys-2">Kidneys</h3>
+<p>The kidneys regulate:</p>
+<ul>
+<li>filtration</li>
+<li>sodium</li>
+<li>potassium</li>
+<li>water</li>
+<li>acid–base balance</li>
+<li>blood-pressure-related hormones</li>
+</ul>
+<p>These functions exhibit daily variation. During normal nighttime sleep:</p>
+<ul>
+<li>urine production is generally reduced</li>
+<li>urine becomes more concentrated</li>
+<li>electrolyte excretion patterns change</li>
+</ul>
+<p>Local renal clock genes influence transport systems, but human molecular mapping is incomplete.</p>
+</section>
+<section class="level2" id="skeletal-muscle">
+<h3 id="skeletal-muscle-2">Skeletal muscle</h3>
+<p><strong>Biological day</strong></p>
+<p>Muscle supports:</p>
+<ul>
+<li>movement</li>
+<li>glucose disposal</li>
+<li>fuel oxidation</li>
+<li>mechanical performance</li>
+<li>myokine release</li>
+</ul>
+<p><strong>After exercise</strong></p>
+<p>Repair and adaptation signaling can begin immediately and continue for many hours.</p>
+<p><strong>Sleep</strong></p>
+<p>Sleep supports recovery through:</p>
+<ul>
+<li>reduced competing activity</li>
+<li>hormonal coordination</li>
+<li>autonomic changes</li>
+<li>energy conservation</li>
+<li>maintenance of metabolic and immune regulation</li>
+</ul>
+<p>It is not verified that sleep activates one exclusive “muscle repair program.”</p>
+<p><strong>Representative pathways</strong></p>
+<ul>
+<li>insulin–AKT</li>
+<li>mTORC1</li>
+<li>AMPK</li>
+<li>PGC-1α</li>
+<li>FOXO</li>
+<li>autophagy pathways</li>
+<li>mitochondrial biogenesis</li>
+<li>muscle clock genes</li>
+</ul>
+</section>
+<section class="level2" id="adipose-tissue">
+<h3 id="adipose-tissue-2">Adipose tissue</h3>
+<p>Adipose tissue alternates between storing and releasing energy according to:</p>
+<ul>
+<li>insulin</li>
+<li>catecholamines</li>
+<li>meals</li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6129005/" rel="noopener noreferrer" target="_blank">fasting</a></li>
+<li>physical activity</li>
+<li>cortisol</li>
+<li>circadian phase</li>
+</ul>
+<p>Leptin displays a daily pattern influenced by meals and sleep. Ghrelin, produced mainly by the stomach, is related to meal anticipation and hunger and is also affected by sleep.<br/>
+<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12482946/?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank">Sleep loss</a> can disturb appetite regulation, insulin sensitivity, and inflammatory signaling, but individual hormonal responses vary.</p>
+</section>
+<section class="level2" id="immune-system-1">
+<h3 id="immune-system-2">Immune system</h3>
+<p><strong>Biological day</strong></p>
+<p>Some immune cells circulate in greater numbers or move toward peripheral tissues.</p>
+<p><strong>Sleep period</strong></p>
+<p>Other immune-cell populations redistribute toward lymphoid tissues, while cytokine signaling changes.</p>
+<p><strong>Clock control</strong></p>
+<p>Immune cells contain molecular clocks. Their timing influences:</p>
+<ul>
+<li>cell trafficking</li>
+<li>inflammatory responsiveness</li>
+<li>pathogen defense</li>
+<li>tissue entry</li>
+<li>adaptive immune coordination</li>
+</ul>
+<p>The immune system cannot be reduced to “inflammation is high at night.” Different cytokines and cell types have different phases.</p>
+</section>
+<section class="level2" id="respiratory-system-1">
+<h3 id="respiratory-system-2">Respiratory system</h3>
+<p>Pulmonary function, airway caliber, and airway inflammation can vary with time of day. During sleep:</p>
+<ul>
+<li>ventilatory drive changes</li>
+<li>upper-airway tone falls</li>
+<li>breathing depends more heavily on automatic control</li>
+<li>REM produces greater irregularity</li>
+</ul>
+<p>Asthma symptoms often show time-of-day patterns, but individual disease processes should not be generalized to healthy physiology.</p>
+</section>
+<section class="level2" id="skin">
+<h3 id="skin-2">Skin</h3>
+<p>Human skin contains <a href="https://www.mdpi.com/1422-0067/17/6/801" rel="noopener noreferrer" target="_blank">circadian clocks</a>. Daily variation has been observed in:</p>
+<ul>
+<li>barrier function</li>
+<li>temperature</li>
+<li>blood flow</li>
+<li>water loss</li>
+<li>cell proliferation</li>
+<li>sensitivity to environmental injury</li>
+</ul>
+<p>Skin also responds directly to:</p>
+<ul>
+<li>light exposure</li>
+<li>temperature</li>
+<li>hydration</li>
+<li>hormones</li>
+<li>sleep loss</li>
+</ul>
+<p>The optimal timing of DNA repair, wound healing, or topical medication differs by pathway and remains an active research area.</p>
+</section>
+<section class="level2" id="bone">
+<h3 id="bone-2">Bone</h3>
+<p><a href="https://www.mdpi.com/1422-0067/25/9/4717" rel="noopener noreferrer" target="_blank">Bone remodeling</a> is continuous. Markers of bone formation and resorption show daily variation, but their rhythms are influenced by:</p>
+<ul>
+<li>food intake</li>
+<li>posture</li>
+<li>activity</li>
+<li>hormones</li>
+<li>sleep</li>
+<li>circadian phase</li>
+</ul>
+<p>It is not verified that bone repair occurs only or primarily during deep sleep.</p>
+</section>
+</section>
+<section class="level1" id="part-iv-what-night-work-changes">
+<h2 id="part-iv-what-night-work-changes-2">Part IV: What night work changes</h2>
+<p>Night work forces behavior into the biological night. The worker may:</p>
+<ul>
+<li>remain awake when melatonin is elevated</li>
+<li>eat when glucose tolerance is reduced</li>
+<li>receive light when the central clock expects darkness</li>
+<li>sleep when circadian wake drive is increasing</li>
+<li>alternate schedules on workdays and days off</li>
+</ul>
+<p>The SCN may shift only partially because:</p>
+<ul>
+<li>morning daylight can oppose adaptation</li>
+<li>daytime sleep is often shorter</li>
+<li>family and social schedules preserve daytime behavior</li>
+<li>light exposure varies across workdays</li>
+<li>meal timing may shift differently from sleep timing</li>
+</ul>
+<p>Peripheral tissues may therefore occupy different phases relative to one another. This is called internal desynchrony. Experimental circadian misalignment in humans has been associated with:</p>
+<ul>
+<li>impaired glucose regulation</li>
+<li>altered blood pressure</li>
+<li>changed cortisol timing</li>
+<li>disturbed sleep</li>
+<li>altered gene-expression rhythms</li>
+</ul>
+<p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3607048/?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank">Human blood studies</a> have shown that insufficient or mistimed sleep can reduce the number or amplitude of rhythmic transcripts. This does not mean that every night worker will develop disease. Risk depends on:</p>
+<ul>
+<li>duration of exposure</li>
+<li>schedule stability</li>
+<li>sleep duration</li>
+<li>light exposure</li>
+<li>food timing</li>
+<li>activity</li>
+<li>age</li>
+<li>genetics</li>
+<li>existing health</li>
+<li>social conditions</li>
+</ul>
+</section>
+<section class="level1" id="part-v-what-remains-unknown">
+<h2 id="part-v-what-remains-unknown-2">Part V: What remains unknown</h2>
+<ol type="1">
+<li><strong>A complete human organ-by-organ transcriptome.</strong> Researchers cannot repeatedly biopsy the brain, liver, pancreas, heart, kidney, and other organs of healthy people every few hours. As a result, the most detailed whole-body molecular maps often rely on:</li>
+</ol>
+<ul>
+<li>Animals</li>
+<li>postmortem tissue</li>
+<li>cultured cells</li>
+<li>blood</li>
+<li>skin</li>
+<li>limited surgical samples</li>
+<li>computational inference</li>
+</ul>
+<ol start="2" type="1">
+<li><strong>Protein timing.</strong> Even when messenger RNA rhythms are known, protein abundance and activity may not follow the same timing. A complete atlas requires:</li>
+</ol>
+<ul>
+<li>Transcriptomics</li>
+<li>Proteomics</li>
+<li>Phosphoproteomics</li>
+<li>Metabolomics enzyme-activity measurements<br/>
+from the same individuals across circadian time.</li>
+</ul>
+<ol start="3" type="1">
+<li><strong>Circadian versus sleep effects</strong> Under normal life conditions:</li>
+</ol>
+<ul>
+<li>darkness coincides with evening</li>
+<li>fasting coincides with sleep</li>
+<li>lying down coincides with sleep</li>
+<li>inactivity coincides with sleep</li>
+</ul>
+<p>Researchers use forced-desynchrony and constant-routine protocols to separate these factors, but such studies are difficult and usually include relatively small groups. (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5142605/?utm_source=chatgpt.com" rel="noopener noreferrer" target="_blank">PMC</a>)</p>
+<ol start="4" type="1">
+<li><strong>Direct molecular mapping during natural sleep.</strong> Blood can be sampled repeatedly, but frequent sampling can itself disturb sleep. Researchers need minimally disruptive methods that can measure:</li>
+</ol>
+<ul>
+<li>Hormones</li>
+<li>Metabolites</li>
+<li>immune state</li>
+<li>organ-specific extracellular vesicles</li>
+<li>neural activity</li>
+<li>protein modification</li>
+<li>tissue-clock phase</li>
+</ul>
+<p>without repeatedly waking participants.</p>
+</section>
+<section class="level1" id="the-verified-summary">
+<h2 id="the-verified-summary-2">The verified summary</h2>
+<p>The most defensible current model is:</p>
+<p>Environmental light and behavior<br/>
+               ↓<br/>
+Retinal and behavioral timing signals<br/>
+               ↓<br/>
+SCN central circadian oscillator<br/>
+               ↓<br/>
+Autonomic signals • hormones • temperature • behavior<br/>
+               ↓<br/>
+Local clocks in organs and cells<br/>
+               ↓<br/>
+Time-dependent gene expression and cellular responsiveness<br/>
+               ↓<br/>
+Changing physiology across the day</p>
+<p>At the same time:</p>
+<p>Time awake increases sleep pressure<br/>
+               ↓<br/>
+Circadian wake drive changes by biological phase<br/>
+               ↓<br/>
+Sleep-promoting and wake-promoting circuits compete<br/>
+               ↓<br/>
+Wake, NREM and REM states emerge<br/>
+               ↓<br/>
+Sleep state modifies neural, endocrine, immune, cardiovascular, respiratory and metabolic function</p>
+<p>The two diagrams interact continuously. The body does not wait until sleep to perform all maintenance. The body does not completely shut digestion, immunity, metabolism, or the brain down at night. It changes operating mode. During the biological day, physiology is generally coordinated for:</p>
+<ul>
+<li>environmental interaction</li>
+<li>movement</li>
+<li>food intake</li>
+<li>learning and information acquisition</li>
+<li>rapid responses to external demand</li>
+</ul>
+<p>During the biological night and sleep, physiology shifts toward:</p>
+<ul>
+<li>fasting regulation</li>
+<li>reduced cardiovascular load during NREM</li>
+<li>altered immune-cell trafficking</li>
+<li>memory-related neural processing</li>
+<li>endocrine rhythms associated with sleep</li>
+<li>changes in brain-fluid dynamics</li>
+<li>conservation and redistribution of energy</li>
+<li>cellular maintenance processes whose exact organ-level timing remains only partly mapped</li>
+</ul>
+<p>Basically:</p>
+<p><em>Circadian time determines when systems are prepared to perform particular functions. Sleep state determines which operating condition the body is currently in. Behavior and environment can either reinforce that coordination or force the systems to work against one another.</em></p>
+<p>The Human Night</p>
+<p>The objective cannot be to eliminate the biological effects of working at night. We’re on a planet spinning around the sun in a body design to play in the sunshine. The objective is to reduce internal desynchrony by giving the body's central and peripheral clocks the most consistent timing signals possible.</p>
+<p>The schedule below assumes:</p>
+<ul>
+<li>Permanent night shift</li>
+<li>Work approximately 9:00 p.m.–7:00 a.m.</li>
+<li>Main sleep period 8:00 a.m.–4:00 p.m.</li>
+<li>Stable schedule seven days per week whenever practical</li>
+</ul>
+</section>
+<section class="level1" id="p.m.---wake">
+<h2 id="4-00-p-m-wake">4:00 p.m. - Wake</h2>
+<p>Objective: Begin the biological day with a consistent timing signal.</p>
+<section class="level2" id="for-the-brain">
+<h3 id="for-the-brain-6">For the Brain!</h3>
+<p>Wake at the same time each day, including days off whenever practical. Consistent wake time strengthens the relationship between sleep pressure and circadian timing. Frequent shifts in wake time make the timing of sleep less predictable and reduce adaptation to a nocturnal schedule.</p>
+</section>
+<section class="level2" id="for-the-endocrine-system">
+<h3 id="for-the-endocrine-system-4">For the Endocrine System!</h3>
+<p>Expect cortisol to rise after waking, even if waking occurs in the afternoon. Cortisol supports alertness and fuel mobilization. Avoid interpreting this normal increase as evidence that the body has fully adapted to night work.</p>
+</section>
+<section class="level2" id="for-the-cardiovascular-system">
+<h3 id="for-the-cardiovascular-system-4">For the Cardiovascular System!</h3>
+<p>Stand, hydrate, and begin moving soon after waking. Overnight sleep reduces sympathetic activity and blood pressure. Gradual movement allows cardiovascular function to transition into the active period.</p>
+</section>
+</section>
+<section class="level1" id="p.m.---bright-light">
+<h2 id="4-15-4-45-p-m-bright-light">4:15–4:45 p.m. - Bright Light</h2>
+<p>Objective: Provide a strong wake signal.</p>
+<section class="level2" id="for-the-brain-1">
+<h3 id="for-the-brain-7">For the Brain!</h3>
+<p>Expose yourself to bright light immediately after waking. Chapter 1 showed that light is the dominant environmental input to the SCN. Although complete circadian adaptation is uncommon, consistent bright light after waking helps reinforce the beginning of the workday.</p>
+<p>Natural sunlight is effective if available. If waking near dusk or indoors, a properly designed bright-light source may provide a useful substitute.</p>
+</section>
+<section class="level2" id="for-the-endocrine-system-1">
+<h3 id="for-the-endocrine-system-5">For the Endocrine System!</h3>
+<p>Bright light suppresses melatonin and increases alertness through both circadian and non-circadian pathways.</p>
+</section>
+</section>
+<section class="level1" id="p.m.---exercise">
+<h2 id="5-00-p-m-exercise">5:00 p.m. - Exercise</h2>
+<p>Objective: Reinforce the active phase.</p>
+<section class="level2" id="for-the-skeletal-muscle">
+<h3 id="for-the-skeletal-muscle-2">For the Skeletal Muscle!</h3>
+<p>Schedule the primary resistance or endurance workout shortly after waking whenever practical. Exercise increases muscle glucose uptake, mitochondrial activity, body temperature, and alertness while providing an anabolic stimulus for adaptation.</p>
+</section>
+<section class="level2" id="for-the-cardiovascular-system-1">
+<h3 id="for-the-cardiovascular-system-5">For the Cardiovascular System!</h3>
+<p>Exercise increases heart rate and cardiac output during the intended active period rather than immediately before sleep.</p>
+</section>
+<section class="level2" id="for-the-metabolism">
+<h3 id="for-the-metabolism-2">For the Metabolism!</h3>
+<p>Muscle contraction improves glucose disposal independently of insulin, supporting metabolic health despite the challenges of night work.</p>
+</section>
+</section>
+<section class="level1" id="p.m.---first-meal">
+<h2 id="6-00-p-m-first-meal">6:00 p.m. - First Meal</h2>
+<p>Objective: Begin the metabolic day.</p>
+<section class="level2" id="for-the-liver">
+<h3 id="for-the-liver-2">For the Liver!</h3>
+<p>The liver responds strongly to feeding cues. Placing the first substantial meal near the beginning of the active period aligns nutrient processing with wakefulness.</p>
+</section>
+<section class="level2" id="for-the-pancreas">
+<h3 id="for-the-pancreas-2">For the Pancreas!</h3>
+<p>Insulin secretion is stimulated during the active portion of the schedule rather than immediately before sleep.</p>
+</section>
+<section class="level2" id="for-the-gastrointestinal-system">
+<h3 id="for-the-gastrointestinal-system-2">For the Gastrointestinal System!</h3>
+<p>Digestive activity is naturally greater during wakefulness than during sleep. Eating after waking supports normal gastrointestinal function. A balanced meal containing protein, complex carbohydrates, healthy fats, and fiber provides sustained energy for the upcoming shift.</p>
+</section>
+</section>
+<section class="level1" id="p.m.---begin-work">
+<h2 id="8-30-p-m-begin-work">8:30 p.m. - Begin Work</h2>
+<p>Objective: Maintain alertness without unnecessary physiological disruption.</p>
+<section class="level2" id="for-the-brain-2">
+<h3 id="for-the-brain-8">For the Brain!</h3>
+<p>Mental performance depends on both circadian timing and accumulated sleep pressure. Early in the shift, sleep pressure is low because the individual has recently awakened.</p>
+</section>
+<section class="level2" id="for-the-cardiovascular-system-2">
+<h3 id="for-the-cardiovascular-system-6">For the Cardiovascular System!</h3>
+<p>Keep it moving. Avoid prolonged sitting. Movement every hour supports circulation and reduces fatigue.</p>
+</section>
+</section>
+<section class="level1" id="p.m.200-a.m.---middle-of-shift">
+<h2 id="10-00-p-m-2-00-a-m-middle-of-shift">10:00 p.m.–2:00 a.m. - Middle of Shift</h2>
+<p>Objective: Maintain consistent energy.</p>
+<section class="level2" id="nutrition">
+<h3 id="nutrition-2">Nutrition</h3>
+<p>Eat a moderate high-protein meal. Stay away from refined sugar. Large swings in blood glucose contribute to fatigue and hunger.</p>
+</section>
+<section class="level2" id="hydration">
+<h3 id="hydration-2">Hydration</h3>
+<p><a href="https://www.nationalacademies.org/read/10925/chapter/6" rel="noopener noreferrer" target="_blank">Drink water</a> regularly throughout the shift. Mild dehydration impairs attention and physical performance.</p>
+<p><em>“The Adequate Intake (AI) for total water intake for young men and women (ages 19 to 30 years) is 3.7 L and 2.7 L per day, respectively.”</em> So about a gallon a day or eight ounces an hour.</p>
+</section>
+<section class="level2" id="caffeine">
+<h3 id="caffeine-2">Caffeine</h3>
+<p>If caffeine is used, consume it during the first half of the shift. Caffeine blocks adenosine receptors, reducing perceived sleepiness. Using caffeine late in the shift increases the likelihood of interfering with daytime sleep.</p>
+<p>Interestingly, the dose has the greatest effect on <a href="https://academic.oup.com/sleep/article/48/4/zsae230/7815486" rel="noopener noreferrer" target="_blank">the longevity of caffeine</a> in the body. A standard 8-10 ounce cup of coffee contains 80-100 mg of caffeine, which has little effect on sleep even four hours before bed, however the widely considered “safe” daily dose of 400 mg of caffeine negatively affected sleep 12 hours before bed. So, if you have to drink caffeine, one 100 mg dose per shift at least four hours before bed shouldn’t hurt you too bad.</p>
+</section>
+</section>
+<section class="level1" id="a.m.---slump">
+<h2 id="2-00-3-00-a-m-slump">2:00–3:00 a.m. - Slump</h2>
+<p>Objective: Manage the circadian low point. The late biological night is a period when alertness naturally declines, body temperature approaches its minimum, and cognitive performance is reduced. Night workers often experience their greatest fatigue during this period.</p>
+<section class="level2" id="for-the-brain-3">
+<h3 id="for-the-brain-9">For the Brain!</h3>
+<p>Increase movement, conversation, or task variation when practical. Bright workplace lighting may help maintain alertness. Avoid relying solely on additional caffeine if sleep will begin within less than eight hours.</p>
+</section>
+</section>
+<section class="level1" id="a.m.---home-stretch">
+<h2 id="4-00-6-00-a-m-home-stretch">4:00–6:00 a.m. - Home Stretch</h2>
+<p>Objective: Finish work without creating unnecessary sleep barriers.</p>
+<section class="level2" id="nutrition-1">
+<h3 id="nutrition-3">Nutrition</h3>
+<p>If another meal is needed, keep it relatively light. Current research has not established the ideal meal timing for permanent night workers, but limiting very large meals immediately before sleep may reduce gastrointestinal discomfort and metabolic disruption.</p>
+</section>
+</section>
+<section class="level1" id="a.m.---leave-work">
+<h2 id="7-00-a-m-leave-work">7:00 a.m. - Leave Work</h2>
+<p>Objective: Protect the upcoming sleep period.</p>
+<section class="level2" id="for-the-brain-4">
+<h3 id="for-the-brain-10">For the Brain!</h3>
+<p>Reduce light exposure during the commute home. Morning light is the strongest environmental signal for advancing the SCN. Dark sunglasses can reduce retinal stimulation and help preserve the intended daytime sleep schedule.</p>
+</section>
+<section class="level2" id="for-the-endocrine-system-2">
+<h3 id="for-the-endocrine-system-6">For the Endocrine System!</h3>
+<p>Avoid stimulating activities that unnecessarily prolong wakefulness after work.</p>
+</section>
+</section>
+<section class="level1" id="a.m.---routine">
+<h2 id="7-30-a-m-routine">7:30 a.m. - Routine</h2>
+<p>Objective: Transition toward sleep. Maintain a consistent pre-sleep routine. Hot showers can help dilute capillaries near the surface of the skin and reduce core body temperature.</p>
+<section class="level2" id="environment">
+<h3 id="environment-2">Environment</h3>
+<p>Reduce:</p>
+<ul>
+<li>bright light</li>
+<li>phone use</li>
+<li>emotionally stimulating activities – no arguments with domestic folks</li>
+<li>unnecessary errands – save it for the afternoon</li>
+</ul>
+<p>The purpose is not to eliminate all stimulation but to allow sleep-promoting systems to dominate.</p>
+</section>
+</section>
+<section class="level1" id="a.m.400-p.m.---sleep">
+<h2 id="8-00-a-m-4-00-p-m-sleep">8:00 a.m.–4:00 p.m. - Sleep</h2>
+<p>Objective: Protect sleep quality.</p>
+<section class="level2" id="environment-1">
+<h3 id="environment-3">Environment</h3>
+<p>Maintain:</p>
+<ul>
+<li>complete darkness whenever possible</li>
+<li><a href="https://www.sleepfoundation.org/bedroom-environment/best-temperature-for-sleep" rel="noopener noreferrer" target="_blank">cool room temperature</a> – between 60-68° F</li>
+<li>quiet sleeping conditions</li>
+</ul>
+<p>Invest in a fan and black-out curtains! These conditions support sleep initiation and reduce unnecessary awakenings.</p>
+</section>
+<section class="level2" id="for-the-brain-5">
+<h3 id="for-the-brain-11">For the Brain!</h3>
+<p>Normal sleep should cycle repeatedly through NREM and REM stages. Both contribute to healthy physiology through mechanisms described in Chapter 1.</p>
+</section>
+<section class="level2" id="for-the-cardiovascular-system-3">
+<h3 id="for-the-cardiovascular-system-7">For the Cardiovascular System!</h3>
+<p>Stable sleep allows the normal nocturnal reduction in sympathetic activity and blood pressure.</p>
+</section>
+<section class="level2" id="for-the-immune-system">
+<h3 id="for-the-immune-system-2">For the Immune System!</h3>
+<p>Normal sleep supports coordinated immune-cell trafficking and adaptive immune function.</p>
+</section>
+<section class="level2" id="for-the-endocrine-system-3">
+<h3 id="for-the-endocrine-system-7">For the Endocrine System!</h3>
+<p>Growth hormone secretion, prolactin, and other sleep-associated hormonal rhythms depend more on sleep itself than on the wall clock, although circadian timing continues to influence their regulation.</p>
+<p>Throughout the week keep the schedule stable. The strongest circadian signal is consistency. Repeatedly alternating between daytime and nighttime schedules forces the SCN and peripheral clocks to readjust continuously. Remaining on approximately the same sleep, meal, exercise, and light schedule throughout the week reduces repeated internal desynchrony.</p>
+</section>
+</section>
+<section class="level1" id="what-cannot-be-fully-controlled">
+<h2 id="what-cannot-be-fully-controlled-2">What Cannot Be Fully Controlled</h2>
+<p>Some aspects of physiology remain difficult to shift completely.</p>
+<p>The SCN responds primarily to light. Peripheral organs also respond to meals, activity, and hormones. Even with careful management of these signals, complete circadian adaptation is uncommon in real-world night workers.</p>
+<p>The purpose of this schedule is therefore not perfection. It is to make the strongest controllable signals, light, sleep timing, meals, exercise, and consistency, work together rather than against one another.</p>
+</section>
+
+    </article>
+
+    <nav class="publication-navigation" aria-label="Publication navigation">
+      <a href="#top">↑ Back to top</a>
+      <a href="/notes/">← Back to Notes</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Brock Mace · California</p>
+  </footer>
 </body>
 </html>
