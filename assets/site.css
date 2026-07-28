@@ -314,3 +314,103 @@ th {
     white-space: nowrap;
   }
 }
+
+
+/* Compatibility rules for the original Human Day & Night article markup. */
+.article-introduction {
+  margin: 48px 0;
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--line);
+}
+
+.article-introduction p,
+.longform-article p {
+  margin: 0 0 1.25em;
+}
+
+.table-of-contents {
+  display: block;
+}
+
+.table-of-contents summary {
+  cursor: pointer;
+  color: var(--black);
+  font-weight: 800;
+}
+
+.table-of-contents .toc-list {
+  margin-top: 18px;
+  padding-left: 1.25rem;
+}
+
+.table-of-contents li + li {
+  margin-top: 6px;
+}
+
+.longform-article h4 {
+  margin: 32px 0 10px;
+  color: var(--black);
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+.longform-article section[id],
+.longform-article h2[id],
+.longform-article h3[id],
+.longform-article h4[id] {
+  scroll-margin-top: 24px;
+}
+
+.longform-article table {
+  display: table;
+  width: 100%;
+  margin: 32px 0;
+  border-collapse: collapse;
+  background: var(--white);
+  box-shadow: 0 5px 14px var(--green-shadow);
+}
+
+.longform-article th,
+.longform-article td {
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  color: var(--black);
+  text-align: left;
+  vertical-align: top;
+}
+
+.longform-article th {
+  font-weight: 800;
+}
+
+.publication-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.site-footer {
+  width: min(var(--max), calc(100% - 40px));
+  margin: 0 auto;
+  padding: 28px 0 48px;
+  border-top: 1px solid var(--line);
+  color: var(--black);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 640px) {
+  .toc {
+    padding: 22px 20px;
+  }
+
+  .longform-article table {
+    display: block;
+    overflow-x: auto;
+    white-space: normal;
+  }
+
+  .publication-navigation {
+    flex-direction: column;
+  }
+}
